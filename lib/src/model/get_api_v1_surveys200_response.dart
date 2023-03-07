@@ -1,0 +1,292 @@
+//
+// AUTO-GENERATED FILE, DO NOT MODIFY!
+//
+
+// ignore_for_file: unused_element
+import 'package:built_collection/built_collection.dart';
+import 'package:openapi/src/model/survey.dart';
+import 'package:openapi/src/model/api_v1_events_get200_response_pageable_sort.dart';
+import 'package:openapi/src/model/api_v1_events_get200_response_pageable.dart';
+import 'package:built_value/built_value.dart';
+import 'package:built_value/serializer.dart';
+
+part 'get_api_v1_surveys200_response.g.dart';
+
+/// GetApiV1Surveys200Response
+///
+/// Properties:
+/// * [content] 
+/// * [pageable] 
+/// * [totalPages] 
+/// * [totalElements] 
+/// * [last] 
+/// * [size] 
+/// * [number] 
+/// * [sort] 
+/// * [numberOfElements] 
+/// * [first] 
+/// * [empty] 
+@BuiltValue()
+abstract class GetApiV1Surveys200Response implements Built<GetApiV1Surveys200Response, GetApiV1Surveys200ResponseBuilder> {
+  @BuiltValueField(wireName: r'content')
+  BuiltList<Survey>? get content;
+
+  @BuiltValueField(wireName: r'pageable')
+  ApiV1EventsGet200ResponsePageable? get pageable;
+
+  @BuiltValueField(wireName: r'totalPages')
+  int? get totalPages;
+
+  @BuiltValueField(wireName: r'totalElements')
+  int? get totalElements;
+
+  @BuiltValueField(wireName: r'last')
+  bool? get last;
+
+  @BuiltValueField(wireName: r'size')
+  int? get size;
+
+  @BuiltValueField(wireName: r'number')
+  int? get number;
+
+  @BuiltValueField(wireName: r'sort')
+  ApiV1EventsGet200ResponsePageableSort? get sort;
+
+  @BuiltValueField(wireName: r'numberOfElements')
+  int? get numberOfElements;
+
+  @BuiltValueField(wireName: r'first')
+  bool? get first;
+
+  @BuiltValueField(wireName: r'empty')
+  bool? get empty;
+
+  GetApiV1Surveys200Response._();
+
+  factory GetApiV1Surveys200Response([void updates(GetApiV1Surveys200ResponseBuilder b)]) = _$GetApiV1Surveys200Response;
+
+  @BuiltValueHook(initializeBuilder: true)
+  static void _defaults(GetApiV1Surveys200ResponseBuilder b) => b;
+
+  @BuiltValueSerializer(custom: true)
+  static Serializer<GetApiV1Surveys200Response> get serializer => _$GetApiV1Surveys200ResponseSerializer();
+}
+
+class _$GetApiV1Surveys200ResponseSerializer implements PrimitiveSerializer<GetApiV1Surveys200Response> {
+  @override
+  final Iterable<Type> types = const [GetApiV1Surveys200Response, _$GetApiV1Surveys200Response];
+
+  @override
+  final String wireName = r'GetApiV1Surveys200Response';
+
+  Iterable<Object?> _serializeProperties(
+    Serializers serializers,
+    GetApiV1Surveys200Response object, {
+    FullType specifiedType = FullType.unspecified,
+  }) sync* {
+    if (object.content != null) {
+      yield r'content';
+      yield serializers.serialize(
+        object.content,
+        specifiedType: const FullType(BuiltList, [FullType(Survey)]),
+      );
+    }
+    if (object.pageable != null) {
+      yield r'pageable';
+      yield serializers.serialize(
+        object.pageable,
+        specifiedType: const FullType(ApiV1EventsGet200ResponsePageable),
+      );
+    }
+    if (object.totalPages != null) {
+      yield r'totalPages';
+      yield serializers.serialize(
+        object.totalPages,
+        specifiedType: const FullType(int),
+      );
+    }
+    if (object.totalElements != null) {
+      yield r'totalElements';
+      yield serializers.serialize(
+        object.totalElements,
+        specifiedType: const FullType(int),
+      );
+    }
+    if (object.last != null) {
+      yield r'last';
+      yield serializers.serialize(
+        object.last,
+        specifiedType: const FullType(bool),
+      );
+    }
+    if (object.size != null) {
+      yield r'size';
+      yield serializers.serialize(
+        object.size,
+        specifiedType: const FullType(int),
+      );
+    }
+    if (object.number != null) {
+      yield r'number';
+      yield serializers.serialize(
+        object.number,
+        specifiedType: const FullType(int),
+      );
+    }
+    if (object.sort != null) {
+      yield r'sort';
+      yield serializers.serialize(
+        object.sort,
+        specifiedType: const FullType(ApiV1EventsGet200ResponsePageableSort),
+      );
+    }
+    if (object.numberOfElements != null) {
+      yield r'numberOfElements';
+      yield serializers.serialize(
+        object.numberOfElements,
+        specifiedType: const FullType(int),
+      );
+    }
+    if (object.first != null) {
+      yield r'first';
+      yield serializers.serialize(
+        object.first,
+        specifiedType: const FullType(bool),
+      );
+    }
+    if (object.empty != null) {
+      yield r'empty';
+      yield serializers.serialize(
+        object.empty,
+        specifiedType: const FullType(bool),
+      );
+    }
+  }
+
+  @override
+  Object serialize(
+    Serializers serializers,
+    GetApiV1Surveys200Response object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+  }
+
+  void _deserializeProperties(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+    required List<Object?> serializedList,
+    required GetApiV1Surveys200ResponseBuilder result,
+    required List<Object?> unhandled,
+  }) {
+    for (var i = 0; i < serializedList.length; i += 2) {
+      final key = serializedList[i] as String;
+      final value = serializedList[i + 1];
+      switch (key) {
+        case r'content':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(BuiltList, [FullType(Survey)]),
+          ) as BuiltList<Survey>;
+          result.content.replace(valueDes);
+          break;
+        case r'pageable':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(ApiV1EventsGet200ResponsePageable),
+          ) as ApiV1EventsGet200ResponsePageable;
+          result.pageable.replace(valueDes);
+          break;
+        case r'totalPages':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.totalPages = valueDes;
+          break;
+        case r'totalElements':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.totalElements = valueDes;
+          break;
+        case r'last':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.last = valueDes;
+          break;
+        case r'size':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.size = valueDes;
+          break;
+        case r'number':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.number = valueDes;
+          break;
+        case r'sort':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(ApiV1EventsGet200ResponsePageableSort),
+          ) as ApiV1EventsGet200ResponsePageableSort;
+          result.sort.replace(valueDes);
+          break;
+        case r'numberOfElements':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(int),
+          ) as int;
+          result.numberOfElements = valueDes;
+          break;
+        case r'first':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.first = valueDes;
+          break;
+        case r'empty':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.empty = valueDes;
+          break;
+        default:
+          unhandled.add(key);
+          unhandled.add(value);
+          break;
+      }
+    }
+  }
+
+  @override
+  GetApiV1Surveys200Response deserialize(
+    Serializers serializers,
+    Object serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = GetApiV1Surveys200ResponseBuilder();
+    final serializedList = (serialized as Iterable<Object?>).toList();
+    final unhandled = <Object?>[];
+    _deserializeProperties(
+      serializers,
+      serialized,
+      specifiedType: specifiedType,
+      serializedList: serializedList,
+      unhandled: unhandled,
+      result: result,
+    );
+    return result.build();
+  }
+}
+
