@@ -149,6 +149,8 @@ export 'package:openapi/src/model/question_type.dart';
 export 'package:openapi/src/model/question_update_request.dart';
 export 'package:openapi/src/model/receivers_update_request.dart';
 export 'package:openapi/src/model/receivers_update_response.dart';
+export 'package:openapi/src/model/refresh_token_request.dart';
+export 'package:openapi/src/model/refresh_token_response.dart';
 export 'package:openapi/src/model/registrant_has_already_answered.dart';
 export 'package:openapi/src/model/registrant_rank_update_request.dart';
 export 'package:openapi/src/model/registrant_rank_update_response.dart';

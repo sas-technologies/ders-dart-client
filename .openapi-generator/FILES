@@ -121,6 +121,8 @@ doc/QuestionType.md
 doc/QuestionUpdateRequest.md
 doc/ReceiversUpdateRequest.md
 doc/ReceiversUpdateResponse.md
+doc/RefreshTokenRequest.md
+doc/RefreshTokenResponse.md
 doc/RegistrantHasAlreadyAnswered.md
 doc/RegistrantRankUpdateRequest.md
 doc/RegistrantRankUpdateResponse.md
@@ -367,6 +369,8 @@ lib/src/model/question_type.dart
 lib/src/model/question_update_request.dart
 lib/src/model/receivers_update_request.dart
 lib/src/model/receivers_update_response.dart
+lib/src/model/refresh_token_request.dart
+lib/src/model/refresh_token_response.dart
 lib/src/model/registrant_has_already_answered.dart
 lib/src/model/registrant_rank_update_request.dart
 lib/src/model/registrant_rank_update_response.dart
@@ -565,6 +569,8 @@ test/question_type_test.dart
 test/question_update_request_test.dart
 test/receivers_update_request_test.dart
 test/receivers_update_response_test.dart
+test/refresh_token_request_test.dart
+test/refresh_token_response_test.dart
 test/registrant_has_already_answered_test.dart
 test/registrant_rank_update_request_test.dart
 test/registrant_rank_update_response_test.dart

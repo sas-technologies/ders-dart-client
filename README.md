@@ -109,6 +109,7 @@ Class | Method | HTTP request | Description
 [*EventsAPIEventSponsorApi*](doc/EventsAPIEventSponsorApi.md) | [**apiV1EventsEventIdSponsorsSponsorIdGet**](doc/EventsAPIEventSponsorApi.md#apiv1eventseventidsponsorssponsoridget) | **GET** /api/v1/events/{eventId}/sponsors/{sponsorId} | Get Sponsor By Id
 [*EventsAPIEventSponsorApi*](doc/EventsAPIEventSponsorApi.md) | [**apiV1EventsEventIdSponsorsSponsorIdPut**](doc/EventsAPIEventSponsorApi.md#apiv1eventseventidsponsorssponsoridput) | **PUT** /api/v1/events/{eventId}/sponsors/{sponsorId} | Update Sponsor
 [*EventsAPIEventStaffApi*](doc/EventsAPIEventStaffApi.md) | [**patchApiV1EventsEventIdStaff**](doc/EventsAPIEventStaffApi.md#patchapiv1eventseventidstaff) | **PATCH** /api/v1/events/{eventId}/staff | Assign/Unassign Staff to Event
+[*IdentitiesApi*](doc/IdentitiesApi.md) | [**postV1Token**](doc/IdentitiesApi.md#postv1token) | **POST** /v1/token | 
 [*IdentitiesApi*](doc/IdentitiesApi.md) | [**v1AccountssignInWithPasswordPost**](doc/IdentitiesApi.md#v1accountssigninwithpasswordpost) | **POST** /v1/accounts:signInWithPassword | Login
 [*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**apiV1IdentitiesUsersGet**](doc/IdentitiesUsersApi.md#apiv1identitiesusersget) | **GET** /api/v1/identities/users | Fetch All Users
 [*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**apiV1IdentitiesUsersIdDelete**](doc/IdentitiesUsersApi.md#apiv1identitiesusersiddelete) | **DELETE** /api/v1/identities/users/{id} | Delete User
@@ -254,6 +255,8 @@ Class | Method | HTTP request | Description
  - [QuestionUpdateRequest](doc/QuestionUpdateRequest.md)
  - [ReceiversUpdateRequest](doc/ReceiversUpdateRequest.md)
  - [ReceiversUpdateResponse](doc/ReceiversUpdateResponse.md)
+ - [RefreshTokenRequest](doc/RefreshTokenRequest.md)
+ - [RefreshTokenResponse](doc/RefreshTokenResponse.md)
  - [RegistrantHasAlreadyAnswered](doc/RegistrantHasAlreadyAnswered.md)
  - [RegistrantRankUpdateRequest](doc/RegistrantRankUpdateRequest.md)
  - [RegistrantRankUpdateResponse](doc/RegistrantRankUpdateResponse.md)

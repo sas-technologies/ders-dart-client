@@ -109,6 +109,8 @@ import 'package:openapi/src/model/question_type.dart';
 import 'package:openapi/src/model/question_update_request.dart';
 import 'package:openapi/src/model/receivers_update_request.dart';
 import 'package:openapi/src/model/receivers_update_response.dart';
+import 'package:openapi/src/model/refresh_token_request.dart';
+import 'package:openapi/src/model/refresh_token_response.dart';
 import 'package:openapi/src/model/registrant_has_already_answered.dart';
 import 'package:openapi/src/model/registrant_rank_update_request.dart';
 import 'package:openapi/src/model/registrant_rank_update_response.dart';
@@ -285,6 +287,8 @@ part 'serializers.g.dart';
   QuestionUpdateRequest,
   ReceiversUpdateRequest,
   ReceiversUpdateResponse,
+  RefreshTokenRequest,
+  RefreshTokenResponse,
   RegistrantHasAlreadyAnswered,
   RegistrantRankUpdateRequest,
   RegistrantRankUpdateResponse,
