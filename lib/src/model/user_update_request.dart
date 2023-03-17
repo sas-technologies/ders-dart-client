@@ -37,7 +37,7 @@ abstract class UserUpdateRequest implements Built<UserUpdateRequest, UserUpdateR
 
   @BuiltValueField(wireName: r'roles')
   BuiltList<UserUpdateRequestRolesEnum>? get roles;
-  // enum rolesEnum {  SUPER_ADMIN,  ADMIN,  SCANNER,  SPEAKER,  INTERPRETER,  EVENT_MANAGER,  EVENT_COORDINATOR,  COMMENT_MODERATOR,  APPROVER,  };
+  // enum rolesEnum {  SUPER_ADMIN,  ADMIN,  SCANNER,  SPEAKER,  EVENT_MANAGER,  EVENT_COORDINATOR,  COMMENT_MODERATOR,  APPROVER,  };
 
   UserUpdateRequest._();
 
@@ -208,8 +208,6 @@ class UserUpdateRequestRolesEnum extends EnumClass {
   static const UserUpdateRequestRolesEnum SCANNER = _$userUpdateRequestRolesEnum_SCANNER;
   @BuiltValueEnumConst(wireName: r'SPEAKER')
   static const UserUpdateRequestRolesEnum SPEAKER = _$userUpdateRequestRolesEnum_SPEAKER;
-  @BuiltValueEnumConst(wireName: r'INTERPRETER')
-  static const UserUpdateRequestRolesEnum INTERPRETER = _$userUpdateRequestRolesEnum_INTERPRETER;
   @BuiltValueEnumConst(wireName: r'EVENT_MANAGER')
   static const UserUpdateRequestRolesEnum EVENT_MANAGER = _$userUpdateRequestRolesEnum_EVENT_MANAGER;
   @BuiltValueEnumConst(wireName: r'EVENT_COORDINATOR')

@@ -14,8 +14,6 @@ const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_SCANNER =
     const UserUpdateRequestRolesEnum._('SCANNER');
 const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_SPEAKER =
     const UserUpdateRequestRolesEnum._('SPEAKER');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_INTERPRETER =
-    const UserUpdateRequestRolesEnum._('INTERPRETER');
 const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_EVENT_MANAGER =
     const UserUpdateRequestRolesEnum._('EVENT_MANAGER');
 const UserUpdateRequestRolesEnum
@@ -37,8 +35,6 @@ UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnumValueOf(String name) {
       return _$userUpdateRequestRolesEnum_SCANNER;
     case 'SPEAKER':
       return _$userUpdateRequestRolesEnum_SPEAKER;
-    case 'INTERPRETER':
-      return _$userUpdateRequestRolesEnum_INTERPRETER;
     case 'EVENT_MANAGER':
       return _$userUpdateRequestRolesEnum_EVENT_MANAGER;
     case 'EVENT_COORDINATOR':
@@ -58,7 +54,6 @@ final BuiltSet<UserUpdateRequestRolesEnum> _$userUpdateRequestRolesEnumValues =
   _$userUpdateRequestRolesEnum_ADMIN,
   _$userUpdateRequestRolesEnum_SCANNER,
   _$userUpdateRequestRolesEnum_SPEAKER,
-  _$userUpdateRequestRolesEnum_INTERPRETER,
   _$userUpdateRequestRolesEnum_EVENT_MANAGER,
   _$userUpdateRequestRolesEnum_EVENT_COORDINATOR,
   _$userUpdateRequestRolesEnum_COMMENT_MODERATOR,
@@ -75,7 +70,6 @@ class _$UserUpdateRequestRolesEnumSerializer
     'ADMIN': 'ADMIN',
     'SCANNER': 'SCANNER',
     'SPEAKER': 'SPEAKER',
-    'INTERPRETER': 'INTERPRETER',
     'EVENT_MANAGER': 'EVENT_MANAGER',
     'EVENT_COORDINATOR': 'EVENT_COORDINATOR',
     'COMMENT_MODERATOR': 'COMMENT_MODERATOR',
@@ -86,7 +80,6 @@ class _$UserUpdateRequestRolesEnumSerializer
     'ADMIN': 'ADMIN',
     'SCANNER': 'SCANNER',
     'SPEAKER': 'SPEAKER',
-    'INTERPRETER': 'INTERPRETER',
     'EVENT_MANAGER': 'EVENT_MANAGER',
     'EVENT_COORDINATOR': 'EVENT_COORDINATOR',
     'COMMENT_MODERATOR': 'COMMENT_MODERATOR',

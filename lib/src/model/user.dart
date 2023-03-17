@@ -42,7 +42,7 @@ abstract class User implements Built<User, UserBuilder> {
   String? get photoUrl;
 
   @BuiltValueField(wireName: r'roles')
-  BuiltList<UserUpdateRequestRolesEnum>? get roles;
+  BuiltList<UserRolesEnum>? get roles;
   // enum rolesEnum {  SUPER_ADMIN,  ADMIN,  SCANNER,  SPEAKER,  INTERPRETER,  EVENT_MANAGER,  EVENT_COORDINATOR,  COMMENT_MODERATOR,  APPROVER,  };
 
   @BuiltValueField(wireName: r'accountStatus')
@@ -118,7 +118,7 @@ class _$UserSerializer implements PrimitiveSerializer<User> {
       yield r'roles';
       yield serializers.serialize(
         object.roles,
-        specifiedType: const FullType(BuiltList, [FullType(UserUpdateRequestRolesEnum)]),
+        specifiedType: const FullType(BuiltList, [FullType(UserRolesEnum)]),
       );
     }
     if (object.accountStatus != null) {
@@ -197,8 +197,8 @@ class _$UserSerializer implements PrimitiveSerializer<User> {
         case r'roles':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(BuiltList, [FullType(UserUpdateRequestRolesEnum)]),
-          ) as BuiltList<UserUpdateRequestRolesEnum>;
+            specifiedType: const FullType(BuiltList, [FullType(UserRolesEnum)]),
+          ) as BuiltList<UserRolesEnum>;
           result.roles.replace(valueDes);
           break;
         case r'accountStatus':
@@ -237,33 +237,33 @@ class _$UserSerializer implements PrimitiveSerializer<User> {
   }
 }
 
-class UserUpdateRequestRolesEnum extends EnumClass {
+class UserRolesEnum extends EnumClass {
 
   @BuiltValueEnumConst(wireName: r'SUPER_ADMIN')
-  static const UserUpdateRequestRolesEnum SUPER_ADMIN = _$userUpdateRequestRolesEnum_SUPER_ADMIN;
+  static const UserRolesEnum SUPER_ADMIN = _$userRolesEnum_SUPER_ADMIN;
   @BuiltValueEnumConst(wireName: r'ADMIN')
-  static const UserUpdateRequestRolesEnum ADMIN = _$userUpdateRequestRolesEnum_ADMIN;
+  static const UserRolesEnum ADMIN = _$userRolesEnum_ADMIN;
   @BuiltValueEnumConst(wireName: r'SCANNER')
-  static const UserUpdateRequestRolesEnum SCANNER = _$userUpdateRequestRolesEnum_SCANNER;
+  static const UserRolesEnum SCANNER = _$userRolesEnum_SCANNER;
   @BuiltValueEnumConst(wireName: r'SPEAKER')
-  static const UserUpdateRequestRolesEnum SPEAKER = _$userUpdateRequestRolesEnum_SPEAKER;
+  static const UserRolesEnum SPEAKER = _$userRolesEnum_SPEAKER;
   @BuiltValueEnumConst(wireName: r'INTERPRETER')
-  static const UserUpdateRequestRolesEnum INTERPRETER = _$userUpdateRequestRolesEnum_INTERPRETER;
+  static const UserRolesEnum INTERPRETER = _$userRolesEnum_INTERPRETER;
   @BuiltValueEnumConst(wireName: r'EVENT_MANAGER')
-  static const UserUpdateRequestRolesEnum EVENT_MANAGER = _$userUpdateRequestRolesEnum_EVENT_MANAGER;
+  static const UserRolesEnum EVENT_MANAGER = _$userRolesEnum_EVENT_MANAGER;
   @BuiltValueEnumConst(wireName: r'EVENT_COORDINATOR')
-  static const UserUpdateRequestRolesEnum EVENT_COORDINATOR = _$userUpdateRequestRolesEnum_EVENT_COORDINATOR;
+  static const UserRolesEnum EVENT_COORDINATOR = _$userRolesEnum_EVENT_COORDINATOR;
   @BuiltValueEnumConst(wireName: r'COMMENT_MODERATOR')
-  static const UserUpdateRequestRolesEnum COMMENT_MODERATOR = _$userUpdateRequestRolesEnum_COMMENT_MODERATOR;
+  static const UserRolesEnum COMMENT_MODERATOR = _$userRolesEnum_COMMENT_MODERATOR;
   @BuiltValueEnumConst(wireName: r'APPROVER')
-  static const UserUpdateRequestRolesEnum APPROVER = _$userUpdateRequestRolesEnum_APPROVER;
+  static const UserRolesEnum APPROVER = _$userRolesEnum_APPROVER;
 
-  static Serializer<UserUpdateRequestRolesEnum> get serializer => _$userUpdateRequestRolesEnumSerializer;
+  static Serializer<UserRolesEnum> get serializer => _$userRolesEnumSerializer;
 
-  const UserUpdateRequestRolesEnum._(String name): super(name);
+  const UserRolesEnum._(String name): super(name);
 
-  static BuiltSet<UserUpdateRequestRolesEnum> get values => _$userUpdateRequestRolesEnumValues;
-  static UserUpdateRequestRolesEnum valueOf(String name) => _$userUpdateRequestRolesEnumValueOf(name);
+  static BuiltSet<UserRolesEnum> get values => _$userRolesEnumValues;
+  static UserRolesEnum valueOf(String name) => _$userRolesEnumValueOf(name);
 }
 
 class UserAccountStatusEnum extends EnumClass {
