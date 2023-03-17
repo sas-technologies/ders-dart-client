@@ -37,19 +37,19 @@ void main() {
       // TODO
     });
 
-    // Update User
-    //
-    //Future<User> apiV1IdentitiesUsersIdPut(String id, { UserUpdateRequest userUpdateRequest }) async
-    test('test apiV1IdentitiesUsersIdPut', () async {
-      // TODO
-    });
-
     // Create User
     //
     // 
     //
-    //Future<User> apiV1IdentitiesUsersPost({ UserCreateRequest userCreateRequest }) async
-    test('test apiV1IdentitiesUsersPost', () async {
+    //Future<User> createUser({ UserCreateRequest userCreateRequest }) async
+    test('test createUser', () async {
+      // TODO
+    });
+
+    // Update User
+    //
+    //Future<User> updateUser(String id, { UserUpdateRequest userUpdateRequest }) async
+    test('test updateUser', () async {
       // TODO
     });
 

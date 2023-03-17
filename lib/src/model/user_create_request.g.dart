@@ -6,108 +6,108 @@ part of 'user_create_request.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_SUPER_ADMIN =
-    const UserUpdateRequestRolesEnum._('SUPER_ADMIN');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_ADMIN =
-    const UserUpdateRequestRolesEnum._('ADMIN');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_SCANNER =
-    const UserUpdateRequestRolesEnum._('SCANNER');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_SPEAKER =
-    const UserUpdateRequestRolesEnum._('SPEAKER');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_EVENT_MANAGER =
-    const UserUpdateRequestRolesEnum._('EVENT_MANAGER');
-const UserUpdateRequestRolesEnum
-    _$userUpdateRequestRolesEnum_EVENT_COORDINATOR =
-    const UserUpdateRequestRolesEnum._('EVENT_COORDINATOR');
-const UserUpdateRequestRolesEnum
-    _$userUpdateRequestRolesEnum_COMMENT_MODERATOR =
-    const UserUpdateRequestRolesEnum._('COMMENT_MODERATOR');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_APPROVER =
-    const UserUpdateRequestRolesEnum._('APPROVER');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_INTERPRETER =
-    const UserUpdateRequestRolesEnum._('INTERPRETER');
+const UserCreateRequestRolesEnum _$userCreateRequestRolesEnum_INTERPRETER =
+    const UserCreateRequestRolesEnum._('INTERPRETER');
+const UserCreateRequestRolesEnum _$userCreateRequestRolesEnum_ADMIN =
+    const UserCreateRequestRolesEnum._('ADMIN');
+const UserCreateRequestRolesEnum _$userCreateRequestRolesEnum_SUPER_ADMIN =
+    const UserCreateRequestRolesEnum._('SUPER_ADMIN');
+const UserCreateRequestRolesEnum _$userCreateRequestRolesEnum_SCANNER =
+    const UserCreateRequestRolesEnum._('SCANNER');
+const UserCreateRequestRolesEnum _$userCreateRequestRolesEnum_SPEAKER =
+    const UserCreateRequestRolesEnum._('SPEAKER');
+const UserCreateRequestRolesEnum _$userCreateRequestRolesEnum_EVENT_MANAGER =
+    const UserCreateRequestRolesEnum._('EVENT_MANAGER');
+const UserCreateRequestRolesEnum
+    _$userCreateRequestRolesEnum_EVENT_COORDINATOR =
+    const UserCreateRequestRolesEnum._('EVENT_COORDINATOR');
+const UserCreateRequestRolesEnum
+    _$userCreateRequestRolesEnum_COMMENT_MODERATOR =
+    const UserCreateRequestRolesEnum._('COMMENT_MODERATOR');
+const UserCreateRequestRolesEnum _$userCreateRequestRolesEnum_APPROVER =
+    const UserCreateRequestRolesEnum._('APPROVER');
 
-UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnumValueOf(String name) {
+UserCreateRequestRolesEnum _$userCreateRequestRolesEnumValueOf(String name) {
   switch (name) {
-    case 'SUPER_ADMIN':
-      return _$userUpdateRequestRolesEnum_SUPER_ADMIN;
-    case 'ADMIN':
-      return _$userUpdateRequestRolesEnum_ADMIN;
-    case 'SCANNER':
-      return _$userUpdateRequestRolesEnum_SCANNER;
-    case 'SPEAKER':
-      return _$userUpdateRequestRolesEnum_SPEAKER;
-    case 'EVENT_MANAGER':
-      return _$userUpdateRequestRolesEnum_EVENT_MANAGER;
-    case 'EVENT_COORDINATOR':
-      return _$userUpdateRequestRolesEnum_EVENT_COORDINATOR;
-    case 'COMMENT_MODERATOR':
-      return _$userUpdateRequestRolesEnum_COMMENT_MODERATOR;
-    case 'APPROVER':
-      return _$userUpdateRequestRolesEnum_APPROVER;
     case 'INTERPRETER':
-      return _$userUpdateRequestRolesEnum_INTERPRETER;
+      return _$userCreateRequestRolesEnum_INTERPRETER;
+    case 'ADMIN':
+      return _$userCreateRequestRolesEnum_ADMIN;
+    case 'SUPER_ADMIN':
+      return _$userCreateRequestRolesEnum_SUPER_ADMIN;
+    case 'SCANNER':
+      return _$userCreateRequestRolesEnum_SCANNER;
+    case 'SPEAKER':
+      return _$userCreateRequestRolesEnum_SPEAKER;
+    case 'EVENT_MANAGER':
+      return _$userCreateRequestRolesEnum_EVENT_MANAGER;
+    case 'EVENT_COORDINATOR':
+      return _$userCreateRequestRolesEnum_EVENT_COORDINATOR;
+    case 'COMMENT_MODERATOR':
+      return _$userCreateRequestRolesEnum_COMMENT_MODERATOR;
+    case 'APPROVER':
+      return _$userCreateRequestRolesEnum_APPROVER;
     default:
       throw new ArgumentError(name);
   }
 }
 
-final BuiltSet<UserUpdateRequestRolesEnum> _$userUpdateRequestRolesEnumValues =
-    new BuiltSet<UserUpdateRequestRolesEnum>(const <UserUpdateRequestRolesEnum>[
-  _$userUpdateRequestRolesEnum_SUPER_ADMIN,
-  _$userUpdateRequestRolesEnum_ADMIN,
-  _$userUpdateRequestRolesEnum_SCANNER,
-  _$userUpdateRequestRolesEnum_SPEAKER,
-  _$userUpdateRequestRolesEnum_EVENT_MANAGER,
-  _$userUpdateRequestRolesEnum_EVENT_COORDINATOR,
-  _$userUpdateRequestRolesEnum_COMMENT_MODERATOR,
-  _$userUpdateRequestRolesEnum_APPROVER,
-  _$userUpdateRequestRolesEnum_INTERPRETER,
+final BuiltSet<UserCreateRequestRolesEnum> _$userCreateRequestRolesEnumValues =
+    new BuiltSet<UserCreateRequestRolesEnum>(const <UserCreateRequestRolesEnum>[
+  _$userCreateRequestRolesEnum_INTERPRETER,
+  _$userCreateRequestRolesEnum_ADMIN,
+  _$userCreateRequestRolesEnum_SUPER_ADMIN,
+  _$userCreateRequestRolesEnum_SCANNER,
+  _$userCreateRequestRolesEnum_SPEAKER,
+  _$userCreateRequestRolesEnum_EVENT_MANAGER,
+  _$userCreateRequestRolesEnum_EVENT_COORDINATOR,
+  _$userCreateRequestRolesEnum_COMMENT_MODERATOR,
+  _$userCreateRequestRolesEnum_APPROVER,
 ]);
 
-Serializer<UserUpdateRequestRolesEnum> _$userUpdateRequestRolesEnumSerializer =
-    new _$UserUpdateRequestRolesEnumSerializer();
+Serializer<UserCreateRequestRolesEnum> _$userCreateRequestRolesEnumSerializer =
+    new _$UserCreateRequestRolesEnumSerializer();
 
-class _$UserUpdateRequestRolesEnumSerializer
-    implements PrimitiveSerializer<UserUpdateRequestRolesEnum> {
+class _$UserCreateRequestRolesEnumSerializer
+    implements PrimitiveSerializer<UserCreateRequestRolesEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
-    'SUPER_ADMIN': 'SUPER_ADMIN',
+    'INTERPRETER': 'INTERPRETER',
     'ADMIN': 'ADMIN',
+    'SUPER_ADMIN': 'SUPER_ADMIN',
     'SCANNER': 'SCANNER',
     'SPEAKER': 'SPEAKER',
     'EVENT_MANAGER': 'EVENT_MANAGER',
     'EVENT_COORDINATOR': 'EVENT_COORDINATOR',
     'COMMENT_MODERATOR': 'COMMENT_MODERATOR',
     'APPROVER': 'APPROVER',
-    'INTERPRETER': 'INTERPRETER',
   };
   static const Map<Object, String> _fromWire = const <Object, String>{
-    'SUPER_ADMIN': 'SUPER_ADMIN',
+    'INTERPRETER': 'INTERPRETER',
     'ADMIN': 'ADMIN',
+    'SUPER_ADMIN': 'SUPER_ADMIN',
     'SCANNER': 'SCANNER',
     'SPEAKER': 'SPEAKER',
     'EVENT_MANAGER': 'EVENT_MANAGER',
     'EVENT_COORDINATOR': 'EVENT_COORDINATOR',
     'COMMENT_MODERATOR': 'COMMENT_MODERATOR',
     'APPROVER': 'APPROVER',
-    'INTERPRETER': 'INTERPRETER',
   };
 
   @override
-  final Iterable<Type> types = const <Type>[UserUpdateRequestRolesEnum];
+  final Iterable<Type> types = const <Type>[UserCreateRequestRolesEnum];
   @override
-  final String wireName = 'UserUpdateRequestRolesEnum';
+  final String wireName = 'UserCreateRequestRolesEnum';
 
   @override
-  Object serialize(Serializers serializers, UserUpdateRequestRolesEnum object,
+  Object serialize(Serializers serializers, UserCreateRequestRolesEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  UserUpdateRequestRolesEnum deserialize(
+  UserCreateRequestRolesEnum deserialize(
           Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
-      UserUpdateRequestRolesEnum.valueOf(
+      UserCreateRequestRolesEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
@@ -123,7 +123,7 @@ class _$UserCreateRequest extends UserCreateRequest {
   @override
   final String? phoneNumber;
   @override
-  final BuiltList<UserUpdateRequestRolesEnum>? roles;
+  final BuiltList<UserCreateRequestRolesEnum>? roles;
 
   factory _$UserCreateRequest(
           [void Function(UserCreateRequestBuilder)? updates]) =>
@@ -208,10 +208,10 @@ class UserCreateRequestBuilder
   String? get phoneNumber => _$this._phoneNumber;
   set phoneNumber(String? phoneNumber) => _$this._phoneNumber = phoneNumber;
 
-  ListBuilder<UserUpdateRequestRolesEnum>? _roles;
-  ListBuilder<UserUpdateRequestRolesEnum> get roles =>
-      _$this._roles ??= new ListBuilder<UserUpdateRequestRolesEnum>();
-  set roles(ListBuilder<UserUpdateRequestRolesEnum>? roles) =>
+  ListBuilder<UserCreateRequestRolesEnum>? _roles;
+  ListBuilder<UserCreateRequestRolesEnum> get roles =>
+      _$this._roles ??= new ListBuilder<UserCreateRequestRolesEnum>();
+  set roles(ListBuilder<UserCreateRequestRolesEnum>? roles) =>
       _$this._roles = roles;
 
   UserCreateRequestBuilder() {

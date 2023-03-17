@@ -36,8 +36,8 @@ abstract class UserCreateRequest implements Built<UserCreateRequest, UserCreateR
   String? get phoneNumber;
 
   @BuiltValueField(wireName: r'roles')
-  BuiltList<UserUpdateRequestRolesEnum>? get roles;
-  // enum rolesEnum {  SUPER_ADMIN,  ADMIN,  SCANNER,  SPEAKER,  EVENT_MANAGER,  EVENT_COORDINATOR,  COMMENT_MODERATOR,  APPROVER,  INTERPRETER,  };
+  BuiltList<UserCreateRequestRolesEnum>? get roles;
+  // enum rolesEnum {  INTERPRETER,  ADMIN,  SUPER_ADMIN,  SCANNER,  SPEAKER,  EVENT_MANAGER,  EVENT_COORDINATOR,  COMMENT_MODERATOR,  APPROVER,  };
 
   UserCreateRequest._();
 
@@ -101,7 +101,7 @@ class _$UserCreateRequestSerializer implements PrimitiveSerializer<UserCreateReq
       yield r'roles';
       yield serializers.serialize(
         object.roles,
-        specifiedType: const FullType(BuiltList, [FullType(UserUpdateRequestRolesEnum)]),
+        specifiedType: const FullType(BuiltList, [FullType(UserCreateRequestRolesEnum)]),
       );
     }
   }
@@ -165,8 +165,8 @@ class _$UserCreateRequestSerializer implements PrimitiveSerializer<UserCreateReq
         case r'roles':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(BuiltList, [FullType(UserUpdateRequestRolesEnum)]),
-          ) as BuiltList<UserUpdateRequestRolesEnum>;
+            specifiedType: const FullType(BuiltList, [FullType(UserCreateRequestRolesEnum)]),
+          ) as BuiltList<UserCreateRequestRolesEnum>;
           result.roles.replace(valueDes);
           break;
         default:
@@ -198,32 +198,32 @@ class _$UserCreateRequestSerializer implements PrimitiveSerializer<UserCreateReq
   }
 }
 
-class UserUpdateRequestRolesEnum extends EnumClass {
+class UserCreateRequestRolesEnum extends EnumClass {
 
-  @BuiltValueEnumConst(wireName: r'SUPER_ADMIN')
-  static const UserUpdateRequestRolesEnum SUPER_ADMIN = _$userUpdateRequestRolesEnum_SUPER_ADMIN;
-  @BuiltValueEnumConst(wireName: r'ADMIN')
-  static const UserUpdateRequestRolesEnum ADMIN = _$userUpdateRequestRolesEnum_ADMIN;
-  @BuiltValueEnumConst(wireName: r'SCANNER')
-  static const UserUpdateRequestRolesEnum SCANNER = _$userUpdateRequestRolesEnum_SCANNER;
-  @BuiltValueEnumConst(wireName: r'SPEAKER')
-  static const UserUpdateRequestRolesEnum SPEAKER = _$userUpdateRequestRolesEnum_SPEAKER;
-  @BuiltValueEnumConst(wireName: r'EVENT_MANAGER')
-  static const UserUpdateRequestRolesEnum EVENT_MANAGER = _$userUpdateRequestRolesEnum_EVENT_MANAGER;
-  @BuiltValueEnumConst(wireName: r'EVENT_COORDINATOR')
-  static const UserUpdateRequestRolesEnum EVENT_COORDINATOR = _$userUpdateRequestRolesEnum_EVENT_COORDINATOR;
-  @BuiltValueEnumConst(wireName: r'COMMENT_MODERATOR')
-  static const UserUpdateRequestRolesEnum COMMENT_MODERATOR = _$userUpdateRequestRolesEnum_COMMENT_MODERATOR;
-  @BuiltValueEnumConst(wireName: r'APPROVER')
-  static const UserUpdateRequestRolesEnum APPROVER = _$userUpdateRequestRolesEnum_APPROVER;
   @BuiltValueEnumConst(wireName: r'INTERPRETER')
-  static const UserUpdateRequestRolesEnum INTERPRETER = _$userUpdateRequestRolesEnum_INTERPRETER;
+  static const UserCreateRequestRolesEnum INTERPRETER = _$userCreateRequestRolesEnum_INTERPRETER;
+  @BuiltValueEnumConst(wireName: r'ADMIN')
+  static const UserCreateRequestRolesEnum ADMIN = _$userCreateRequestRolesEnum_ADMIN;
+  @BuiltValueEnumConst(wireName: r'SUPER_ADMIN')
+  static const UserCreateRequestRolesEnum SUPER_ADMIN = _$userCreateRequestRolesEnum_SUPER_ADMIN;
+  @BuiltValueEnumConst(wireName: r'SCANNER')
+  static const UserCreateRequestRolesEnum SCANNER = _$userCreateRequestRolesEnum_SCANNER;
+  @BuiltValueEnumConst(wireName: r'SPEAKER')
+  static const UserCreateRequestRolesEnum SPEAKER = _$userCreateRequestRolesEnum_SPEAKER;
+  @BuiltValueEnumConst(wireName: r'EVENT_MANAGER')
+  static const UserCreateRequestRolesEnum EVENT_MANAGER = _$userCreateRequestRolesEnum_EVENT_MANAGER;
+  @BuiltValueEnumConst(wireName: r'EVENT_COORDINATOR')
+  static const UserCreateRequestRolesEnum EVENT_COORDINATOR = _$userCreateRequestRolesEnum_EVENT_COORDINATOR;
+  @BuiltValueEnumConst(wireName: r'COMMENT_MODERATOR')
+  static const UserCreateRequestRolesEnum COMMENT_MODERATOR = _$userCreateRequestRolesEnum_COMMENT_MODERATOR;
+  @BuiltValueEnumConst(wireName: r'APPROVER')
+  static const UserCreateRequestRolesEnum APPROVER = _$userCreateRequestRolesEnum_APPROVER;
 
-  static Serializer<UserUpdateRequestRolesEnum> get serializer => _$userUpdateRequestRolesEnumSerializer;
+  static Serializer<UserCreateRequestRolesEnum> get serializer => _$userCreateRequestRolesEnumSerializer;
 
-  const UserUpdateRequestRolesEnum._(String name): super(name);
+  const UserCreateRequestRolesEnum._(String name): super(name);
 
-  static BuiltSet<UserUpdateRequestRolesEnum> get values => _$userUpdateRequestRolesEnumValues;
-  static UserUpdateRequestRolesEnum valueOf(String name) => _$userUpdateRequestRolesEnumValueOf(name);
+  static BuiltSet<UserCreateRequestRolesEnum> get values => _$userCreateRequestRolesEnumValues;
+  static UserCreateRequestRolesEnum valueOf(String name) => _$userCreateRequestRolesEnumValueOf(name);
 }
 

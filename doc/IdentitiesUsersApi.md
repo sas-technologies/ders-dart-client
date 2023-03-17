@@ -13,8 +13,8 @@ Method | HTTP request | Description
 [**apiV1IdentitiesUsersIdDelete**](IdentitiesUsersApi.md#apiv1identitiesusersiddelete) | **DELETE** /api/v1/identities/users/{id} | Delete User
 [**apiV1IdentitiesUsersIdGet**](IdentitiesUsersApi.md#apiv1identitiesusersidget) | **GET** /api/v1/identities/users/{id} | Fetch User By Id
 [**apiV1IdentitiesUsersIdPasswordPut**](IdentitiesUsersApi.md#apiv1identitiesusersidpasswordput) | **PUT** /api/v1/identities/users/{id}/password | Change Password
-[**apiV1IdentitiesUsersIdPut**](IdentitiesUsersApi.md#apiv1identitiesusersidput) | **PUT** /api/v1/identities/users/{id} | Update User
-[**apiV1IdentitiesUsersPost**](IdentitiesUsersApi.md#apiv1identitiesuserspost) | **POST** /api/v1/identities/users | Create User
+[**createUser**](IdentitiesUsersApi.md#createuser) | **POST** /api/v1/identities/users | Create User
+[**updateUser**](IdentitiesUsersApi.md#updateuser) | **PUT** /api/v1/identities/users/{id} | Update User
 
 
 # **apiV1IdentitiesUsersGet**
@@ -192,24 +192,25 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **apiV1IdentitiesUsersIdPut**
-> User apiV1IdentitiesUsersIdPut(id, userUpdateRequest)
+# **createUser**
+> User createUser(userCreateRequest)
 
-Update User
+Create User
+
+
 
 ### Example
 ```dart
 import 'package:openapi/api.dart';
 
 final api = Openapi().getIdentitiesUsersApi();
-final String id = WbweggLEWWZNqKEgFbh73jMb5YP2; // String | 
-final UserUpdateRequest userUpdateRequest = {"uid":"string","lastName":"string","firstName":"string","phoneNumber":"string","email":"string","roles":["SUPER_ADMIN"]}; // UserUpdateRequest | 
+final UserCreateRequest userCreateRequest = ; // UserCreateRequest | 
 
 try {
-    final response = api.apiV1IdentitiesUsersIdPut(id, userUpdateRequest);
+    final response = api.createUser(userCreateRequest);
     print(response);
 } catch on DioError (e) {
-    print('Exception when calling IdentitiesUsersApi->apiV1IdentitiesUsersIdPut: $e\n');
+    print('Exception when calling IdentitiesUsersApi->createUser: $e\n');
 }
 ```
 
@@ -217,8 +218,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **userUpdateRequest** | [**UserUpdateRequest**](UserUpdateRequest.md)|  | [optional] 
+ **userCreateRequest** | [**UserCreateRequest**](UserCreateRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -235,25 +235,24 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **apiV1IdentitiesUsersPost**
-> User apiV1IdentitiesUsersPost(userCreateRequest)
+# **updateUser**
+> User updateUser(id, userUpdateRequest)
 
-Create User
-
-
+Update User
 
 ### Example
 ```dart
 import 'package:openapi/api.dart';
 
 final api = Openapi().getIdentitiesUsersApi();
-final UserCreateRequest userCreateRequest = ; // UserCreateRequest | 
+final String id = WbweggLEWWZNqKEgFbh73jMb5YP2; // String | 
+final UserUpdateRequest userUpdateRequest = ; // UserUpdateRequest | 
 
 try {
-    final response = api.apiV1IdentitiesUsersPost(userCreateRequest);
+    final response = api.updateUser(id, userUpdateRequest);
     print(response);
 } catch on DioError (e) {
-    print('Exception when calling IdentitiesUsersApi->apiV1IdentitiesUsersPost: $e\n');
+    print('Exception when calling IdentitiesUsersApi->updateUser: $e\n');
 }
 ```
 
@@ -261,7 +260,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userCreateRequest** | [**UserCreateRequest**](UserCreateRequest.md)|  | [optional] 
+ **id** | **String**|  | 
+ **userUpdateRequest** | [**UserUpdateRequest**](UserUpdateRequest.md)|  | [optional] 
 
 ### Return type
 

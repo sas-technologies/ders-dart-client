@@ -333,12 +333,11 @@ class IdentitiesUsersApi {
     return _response;
   }
 
-  /// Update User
+  /// Create User
   /// 
   ///
   /// Parameters:
-  /// * [id] 
-  /// * [userUpdateRequest] 
+  /// * [userCreateRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -348,9 +347,8 @@ class IdentitiesUsersApi {
   ///
   /// Returns a [Future] containing a [Response] with a [User] as data
   /// Throws [DioError] if API call or serialization fails
-  Future<Response<User>> apiV1IdentitiesUsersIdPut({ 
-    required String id,
-    UserUpdateRequest? userUpdateRequest,
+  Future<Response<User>> createUser({ 
+    UserCreateRequest? userCreateRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -358,9 +356,9 @@ class IdentitiesUsersApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/api/v1/identities/users/{id}'.replaceAll('{' r'id' '}', id.toString());
+    final _path = r'/api/v1/identities/users';
     final _options = Options(
-      method: r'PUT',
+      method: r'POST',
       headers: <String, dynamic>{
         ...?headers,
       },
@@ -375,8 +373,8 @@ class IdentitiesUsersApi {
     dynamic _bodyData;
 
     try {
-      const _type = FullType(UserUpdateRequest);
-      _bodyData = userUpdateRequest == null ? null : _serializers.serialize(userUpdateRequest, specifiedType: _type);
+      const _type = FullType(UserCreateRequest);
+      _bodyData = userCreateRequest == null ? null : _serializers.serialize(userCreateRequest, specifiedType: _type);
 
     } catch(error, stackTrace) {
       throw DioError(
@@ -430,11 +428,12 @@ class IdentitiesUsersApi {
     );
   }
 
-  /// Create User
+  /// Update User
   /// 
   ///
   /// Parameters:
-  /// * [userCreateRequest] 
+  /// * [id] 
+  /// * [userUpdateRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -444,8 +443,9 @@ class IdentitiesUsersApi {
   ///
   /// Returns a [Future] containing a [Response] with a [User] as data
   /// Throws [DioError] if API call or serialization fails
-  Future<Response<User>> apiV1IdentitiesUsersPost({ 
-    UserCreateRequest? userCreateRequest,
+  Future<Response<User>> updateUser({ 
+    required String id,
+    UserUpdateRequest? userUpdateRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -453,9 +453,9 @@ class IdentitiesUsersApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/api/v1/identities/users';
+    final _path = r'/api/v1/identities/users/{id}'.replaceAll('{' r'id' '}', id.toString());
     final _options = Options(
-      method: r'POST',
+      method: r'PUT',
       headers: <String, dynamic>{
         ...?headers,
       },
@@ -470,8 +470,8 @@ class IdentitiesUsersApi {
     dynamic _bodyData;
 
     try {
-      const _type = FullType(UserCreateRequest);
-      _bodyData = userCreateRequest == null ? null : _serializers.serialize(userCreateRequest, specifiedType: _type);
+      const _type = FullType(UserUpdateRequest);
+      _bodyData = userUpdateRequest == null ? null : _serializers.serialize(userUpdateRequest, specifiedType: _type);
 
     } catch(error, stackTrace) {
       throw DioError(

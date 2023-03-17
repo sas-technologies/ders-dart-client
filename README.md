@@ -115,8 +115,8 @@ Class | Method | HTTP request | Description
 [*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**apiV1IdentitiesUsersIdDelete**](doc/IdentitiesUsersApi.md#apiv1identitiesusersiddelete) | **DELETE** /api/v1/identities/users/{id} | Delete User
 [*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**apiV1IdentitiesUsersIdGet**](doc/IdentitiesUsersApi.md#apiv1identitiesusersidget) | **GET** /api/v1/identities/users/{id} | Fetch User By Id
 [*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**apiV1IdentitiesUsersIdPasswordPut**](doc/IdentitiesUsersApi.md#apiv1identitiesusersidpasswordput) | **PUT** /api/v1/identities/users/{id}/password | Change Password
-[*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**apiV1IdentitiesUsersIdPut**](doc/IdentitiesUsersApi.md#apiv1identitiesusersidput) | **PUT** /api/v1/identities/users/{id} | Update User
-[*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**apiV1IdentitiesUsersPost**](doc/IdentitiesUsersApi.md#apiv1identitiesuserspost) | **POST** /api/v1/identities/users | Create User
+[*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**createUser**](doc/IdentitiesUsersApi.md#createuser) | **POST** /api/v1/identities/users | Create User
+[*IdentitiesUsersApi*](doc/IdentitiesUsersApi.md) | [**updateUser**](doc/IdentitiesUsersApi.md#updateuser) | **PUT** /api/v1/identities/users/{id} | Update User
 [*IdentitiesUsersReportApi*](doc/IdentitiesUsersReportApi.md) | [**getApiV1IdentitiesUsersReport**](doc/IdentitiesUsersReportApi.md#getapiv1identitiesusersreport) | **GET** /api/v1/identities/users/report | GET Report Users
 [*QRAPIRegistrationApi*](doc/QRAPIRegistrationApi.md) | [**getApiV1QrGeneration**](doc/QRAPIRegistrationApi.md#getapiv1qrgeneration) | **GET** /api/v1/qr/events/{eventId}/registrations/{registrationId} | Get QR For Registrant
 [*RegistrationAPIEventsApprovalTemplateApi*](doc/RegistrationAPIEventsApprovalTemplateApi.md) | [**getApiV1RegistrationsTemplate**](doc/RegistrationAPIEventsApprovalTemplateApi.md#getapiv1registrationstemplate) | **GET** /api/v1/registrations/events/{eventId}/approval-template | GET Approval Email Template

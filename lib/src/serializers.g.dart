@@ -188,11 +188,11 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(User.serializer)
       ..add(UserAccountStatusEnum.serializer)
       ..add(UserCreateRequest.serializer)
+      ..add(UserCreateRequestRolesEnum.serializer)
       ..add(UserLoginRequest.serializer)
       ..add(UserLoginResponse.serializer)
       ..add(UserNotFound.serializer)
       ..add(UserReportResponse.serializer)
-      ..add(UserRolesEnum.serializer)
       ..add(UserUpdateRequest.serializer)
       ..add(UserUpdateRequestRolesEnum.serializer)
       ..add(UserUpdateRequestRolesEnum.serializer)
@@ -512,8 +512,9 @@ Serializers _$serializers = (new Serializers().toBuilder()
           const FullType(BuiltList, const [const FullType(User)]),
           () => new ListBuilder<User>())
       ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType(UserRolesEnum)]),
-          () => new ListBuilder<UserRolesEnum>())
+          const FullType(
+              BuiltList, const [const FullType(UserCreateRequestRolesEnum)]),
+          () => new ListBuilder<UserCreateRequestRolesEnum>())
       ..addBuilderFactory(
           const FullType(
               BuiltList, const [const FullType(UserUpdateRequestRolesEnum)]),
