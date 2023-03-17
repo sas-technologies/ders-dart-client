@@ -37,7 +37,7 @@ abstract class UserCreateRequest implements Built<UserCreateRequest, UserCreateR
 
   @BuiltValueField(wireName: r'roles')
   BuiltList<UserUpdateRequestRolesEnum>? get roles;
-  // enum rolesEnum {  SUPER_ADMIN,  ADMIN,  SCANNER,  SPEAKER,  EVENT_MANAGER,  EVENT_COORDINATOR,  COMMENT_MODERATOR,  APPROVER,  };
+  // enum rolesEnum {  SUPER_ADMIN,  ADMIN,  SCANNER,  SPEAKER,  EVENT_MANAGER,  EVENT_COORDINATOR,  COMMENT_MODERATOR,  APPROVER,  INTERPRETER,  };
 
   UserCreateRequest._();
 
@@ -216,6 +216,8 @@ class UserUpdateRequestRolesEnum extends EnumClass {
   static const UserUpdateRequestRolesEnum COMMENT_MODERATOR = _$userUpdateRequestRolesEnum_COMMENT_MODERATOR;
   @BuiltValueEnumConst(wireName: r'APPROVER')
   static const UserUpdateRequestRolesEnum APPROVER = _$userUpdateRequestRolesEnum_APPROVER;
+  @BuiltValueEnumConst(wireName: r'INTERPRETER')
+  static const UserUpdateRequestRolesEnum INTERPRETER = _$userUpdateRequestRolesEnum_INTERPRETER;
 
   static Serializer<UserUpdateRequestRolesEnum> get serializer => _$userUpdateRequestRolesEnumSerializer;
 

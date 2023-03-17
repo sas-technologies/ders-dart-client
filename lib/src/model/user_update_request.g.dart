@@ -24,6 +24,8 @@ const UserUpdateRequestRolesEnum
     const UserUpdateRequestRolesEnum._('COMMENT_MODERATOR');
 const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_APPROVER =
     const UserUpdateRequestRolesEnum._('APPROVER');
+const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_INTERPRETER =
+    const UserUpdateRequestRolesEnum._('INTERPRETER');
 
 UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnumValueOf(String name) {
   switch (name) {
@@ -43,6 +45,8 @@ UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnumValueOf(String name) {
       return _$userUpdateRequestRolesEnum_COMMENT_MODERATOR;
     case 'APPROVER':
       return _$userUpdateRequestRolesEnum_APPROVER;
+    case 'INTERPRETER':
+      return _$userUpdateRequestRolesEnum_INTERPRETER;
     default:
       throw new ArgumentError(name);
   }
@@ -58,6 +62,7 @@ final BuiltSet<UserUpdateRequestRolesEnum> _$userUpdateRequestRolesEnumValues =
   _$userUpdateRequestRolesEnum_EVENT_COORDINATOR,
   _$userUpdateRequestRolesEnum_COMMENT_MODERATOR,
   _$userUpdateRequestRolesEnum_APPROVER,
+  _$userUpdateRequestRolesEnum_INTERPRETER,
 ]);
 
 Serializer<UserUpdateRequestRolesEnum> _$userUpdateRequestRolesEnumSerializer =
@@ -74,6 +79,7 @@ class _$UserUpdateRequestRolesEnumSerializer
     'EVENT_COORDINATOR': 'EVENT_COORDINATOR',
     'COMMENT_MODERATOR': 'COMMENT_MODERATOR',
     'APPROVER': 'APPROVER',
+    'INTERPRETER': 'INTERPRETER',
   };
   static const Map<Object, String> _fromWire = const <Object, String>{
     'SUPER_ADMIN': 'SUPER_ADMIN',
@@ -84,6 +90,7 @@ class _$UserUpdateRequestRolesEnumSerializer
     'EVENT_COORDINATOR': 'EVENT_COORDINATOR',
     'COMMENT_MODERATOR': 'COMMENT_MODERATOR',
     'APPROVER': 'APPROVER',
+    'INTERPRETER': 'INTERPRETER',
   };
 
   @override
