@@ -6,63 +6,58 @@ part of 'user.dart';
 // BuiltValueGenerator
 // **************************************************************************
 
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_SUPER_ADMIN =
-    const UserUpdateRequestRolesEnum._('SUPER_ADMIN');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_ADMIN =
-    const UserUpdateRequestRolesEnum._('ADMIN');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_SCANNER =
-    const UserUpdateRequestRolesEnum._('SCANNER');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_SPEAKER =
-    const UserUpdateRequestRolesEnum._('SPEAKER');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_EVENT_MANAGER =
-    const UserUpdateRequestRolesEnum._('EVENT_MANAGER');
-const UserUpdateRequestRolesEnum
-    _$userUpdateRequestRolesEnum_EVENT_COORDINATOR =
-    const UserUpdateRequestRolesEnum._('EVENT_COORDINATOR');
-const UserUpdateRequestRolesEnum
-    _$userUpdateRequestRolesEnum_COMMENT_MODERATOR =
-    const UserUpdateRequestRolesEnum._('COMMENT_MODERATOR');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_APPROVER =
-    const UserUpdateRequestRolesEnum._('APPROVER');
-const UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnum_INTERPRETER =
-    const UserUpdateRequestRolesEnum._('INTERPRETER');
+const UserRolesEnum _$userRolesEnum_SUPER_ADMIN =
+    const UserRolesEnum._('SUPER_ADMIN');
+const UserRolesEnum _$userRolesEnum_ADMIN = const UserRolesEnum._('ADMIN');
+const UserRolesEnum _$userRolesEnum_SCANNER = const UserRolesEnum._('SCANNER');
+const UserRolesEnum _$userRolesEnum_SPEAKER = const UserRolesEnum._('SPEAKER');
+const UserRolesEnum _$userRolesEnum_EVENT_MANAGER =
+    const UserRolesEnum._('EVENT_MANAGER');
+const UserRolesEnum _$userRolesEnum_EVENT_COORDINATOR =
+    const UserRolesEnum._('EVENT_COORDINATOR');
+const UserRolesEnum _$userRolesEnum_COMMENT_MODERATOR =
+    const UserRolesEnum._('COMMENT_MODERATOR');
+const UserRolesEnum _$userRolesEnum_APPROVER =
+    const UserRolesEnum._('APPROVER');
+const UserRolesEnum _$userRolesEnum_INTERPRETER =
+    const UserRolesEnum._('INTERPRETER');
 
-UserUpdateRequestRolesEnum _$userUpdateRequestRolesEnumValueOf(String name) {
+UserRolesEnum _$userRolesEnumValueOf(String name) {
   switch (name) {
     case 'SUPER_ADMIN':
-      return _$userUpdateRequestRolesEnum_SUPER_ADMIN;
+      return _$userRolesEnum_SUPER_ADMIN;
     case 'ADMIN':
-      return _$userUpdateRequestRolesEnum_ADMIN;
+      return _$userRolesEnum_ADMIN;
     case 'SCANNER':
-      return _$userUpdateRequestRolesEnum_SCANNER;
+      return _$userRolesEnum_SCANNER;
     case 'SPEAKER':
-      return _$userUpdateRequestRolesEnum_SPEAKER;
+      return _$userRolesEnum_SPEAKER;
     case 'EVENT_MANAGER':
-      return _$userUpdateRequestRolesEnum_EVENT_MANAGER;
+      return _$userRolesEnum_EVENT_MANAGER;
     case 'EVENT_COORDINATOR':
-      return _$userUpdateRequestRolesEnum_EVENT_COORDINATOR;
+      return _$userRolesEnum_EVENT_COORDINATOR;
     case 'COMMENT_MODERATOR':
-      return _$userUpdateRequestRolesEnum_COMMENT_MODERATOR;
+      return _$userRolesEnum_COMMENT_MODERATOR;
     case 'APPROVER':
-      return _$userUpdateRequestRolesEnum_APPROVER;
+      return _$userRolesEnum_APPROVER;
     case 'INTERPRETER':
-      return _$userUpdateRequestRolesEnum_INTERPRETER;
+      return _$userRolesEnum_INTERPRETER;
     default:
       throw new ArgumentError(name);
   }
 }
 
-final BuiltSet<UserUpdateRequestRolesEnum> _$userUpdateRequestRolesEnumValues =
-    new BuiltSet<UserUpdateRequestRolesEnum>(const <UserUpdateRequestRolesEnum>[
-  _$userUpdateRequestRolesEnum_SUPER_ADMIN,
-  _$userUpdateRequestRolesEnum_ADMIN,
-  _$userUpdateRequestRolesEnum_SCANNER,
-  _$userUpdateRequestRolesEnum_SPEAKER,
-  _$userUpdateRequestRolesEnum_EVENT_MANAGER,
-  _$userUpdateRequestRolesEnum_EVENT_COORDINATOR,
-  _$userUpdateRequestRolesEnum_COMMENT_MODERATOR,
-  _$userUpdateRequestRolesEnum_APPROVER,
-  _$userUpdateRequestRolesEnum_INTERPRETER,
+final BuiltSet<UserRolesEnum> _$userRolesEnumValues =
+    new BuiltSet<UserRolesEnum>(const <UserRolesEnum>[
+  _$userRolesEnum_SUPER_ADMIN,
+  _$userRolesEnum_ADMIN,
+  _$userRolesEnum_SCANNER,
+  _$userRolesEnum_SPEAKER,
+  _$userRolesEnum_EVENT_MANAGER,
+  _$userRolesEnum_EVENT_COORDINATOR,
+  _$userRolesEnum_COMMENT_MODERATOR,
+  _$userRolesEnum_APPROVER,
+  _$userRolesEnum_INTERPRETER,
 ]);
 
 const UserAccountStatusEnum _$userAccountStatusEnum_ACTIVE =
@@ -87,13 +82,12 @@ final BuiltSet<UserAccountStatusEnum> _$userAccountStatusEnumValues =
   _$userAccountStatusEnum_INACTIVE,
 ]);
 
-Serializer<UserUpdateRequestRolesEnum> _$userUpdateRequestRolesEnumSerializer =
-    new _$UserUpdateRequestRolesEnumSerializer();
+Serializer<UserRolesEnum> _$userRolesEnumSerializer =
+    new _$UserRolesEnumSerializer();
 Serializer<UserAccountStatusEnum> _$userAccountStatusEnumSerializer =
     new _$UserAccountStatusEnumSerializer();
 
-class _$UserUpdateRequestRolesEnumSerializer
-    implements PrimitiveSerializer<UserUpdateRequestRolesEnum> {
+class _$UserRolesEnumSerializer implements PrimitiveSerializer<UserRolesEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
     'SUPER_ADMIN': 'SUPER_ADMIN',
     'ADMIN': 'ADMIN',
@@ -118,20 +112,19 @@ class _$UserUpdateRequestRolesEnumSerializer
   };
 
   @override
-  final Iterable<Type> types = const <Type>[UserUpdateRequestRolesEnum];
+  final Iterable<Type> types = const <Type>[UserRolesEnum];
   @override
-  final String wireName = 'UserUpdateRequestRolesEnum';
+  final String wireName = 'UserRolesEnum';
 
   @override
-  Object serialize(Serializers serializers, UserUpdateRequestRolesEnum object,
+  Object serialize(Serializers serializers, UserRolesEnum object,
           {FullType specifiedType = FullType.unspecified}) =>
       _toWire[object.name] ?? object.name;
 
   @override
-  UserUpdateRequestRolesEnum deserialize(
-          Serializers serializers, Object serialized,
+  UserRolesEnum deserialize(Serializers serializers, Object serialized,
           {FullType specifiedType = FullType.unspecified}) =>
-      UserUpdateRequestRolesEnum.valueOf(
+      UserRolesEnum.valueOf(
           _fromWire[serialized] ?? (serialized is String ? serialized : ''));
 }
 
@@ -177,7 +170,7 @@ class _$User extends User {
   @override
   final String? photoUrl;
   @override
-  final BuiltList<UserUpdateRequestRolesEnum>? roles;
+  final BuiltList<UserRolesEnum>? roles;
   @override
   final UserAccountStatusEnum? accountStatus;
 
@@ -273,11 +266,10 @@ class UserBuilder implements Builder<User, UserBuilder> {
   String? get photoUrl => _$this._photoUrl;
   set photoUrl(String? photoUrl) => _$this._photoUrl = photoUrl;
 
-  ListBuilder<UserUpdateRequestRolesEnum>? _roles;
-  ListBuilder<UserUpdateRequestRolesEnum> get roles =>
-      _$this._roles ??= new ListBuilder<UserUpdateRequestRolesEnum>();
-  set roles(ListBuilder<UserUpdateRequestRolesEnum>? roles) =>
-      _$this._roles = roles;
+  ListBuilder<UserRolesEnum>? _roles;
+  ListBuilder<UserRolesEnum> get roles =>
+      _$this._roles ??= new ListBuilder<UserRolesEnum>();
+  set roles(ListBuilder<UserRolesEnum>? roles) => _$this._roles = roles;
 
   UserAccountStatusEnum? _accountStatus;
   UserAccountStatusEnum? get accountStatus => _$this._accountStatus;

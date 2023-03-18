@@ -214,12 +214,10 @@ doc/UpdateEventInterpretersRequest.md
 doc/UpdateEventSpeakersRequest.md
 doc/UpdateEventStaffRequest.md
 doc/User.md
-doc/UserCreateRequest.md
 doc/UserLoginRequest.md
 doc/UserLoginResponse.md
 doc/UserNotFound.md
 doc/UserReportResponse.md
-doc/UserUpdateRequest.md
 lib/openapi.dart
 lib/src/api.dart
 lib/src/api/authorities_api_authorities_api.dart
@@ -441,12 +439,10 @@ lib/src/model/update_event_interpreters_request.dart
 lib/src/model/update_event_speakers_request.dart
 lib/src/model/update_event_staff_request.dart
 lib/src/model/user.dart
-lib/src/model/user_create_request.dart
 lib/src/model/user_login_request.dart
 lib/src/model/user_login_response.dart
 lib/src/model/user_not_found.dart
 lib/src/model/user_report_response.dart
-lib/src/model/user_update_request.dart
 lib/src/model/uuid_invalid_exception.dart
 lib/src/serializers.dart
 pubspec.yaml
@@ -660,11 +656,9 @@ test/update_authorities_request_test.dart
 test/update_event_interpreters_request_test.dart
 test/update_event_speakers_request_test.dart
 test/update_event_staff_request_test.dart
-test/user_create_request_test.dart
 test/user_login_request_test.dart
 test/user_login_response_test.dart
 test/user_not_found_test.dart
 test/user_report_response_test.dart
 test/user_test.dart
-test/user_update_request_test.dart
 test/uuid_invalid_exception_test.dart

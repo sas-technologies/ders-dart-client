@@ -193,7 +193,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **createUser**
-> User createUser(userCreateRequest)
+> User createUser(user)
 
 Create User
 
@@ -204,10 +204,10 @@ Create User
 import 'package:openapi/api.dart';
 
 final api = Openapi().getIdentitiesUsersApi();
-final UserCreateRequest userCreateRequest = ; // UserCreateRequest | 
+final User user = ; // User | 
 
 try {
-    final response = api.createUser(userCreateRequest);
+    final response = api.createUser(user);
     print(response);
 } catch on DioError (e) {
     print('Exception when calling IdentitiesUsersApi->createUser: $e\n');
@@ -218,7 +218,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userCreateRequest** | [**UserCreateRequest**](UserCreateRequest.md)|  | [optional] 
+ **user** | [**User**](User.md)|  | [optional] 
 
 ### Return type
 
@@ -236,7 +236,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **updateUser**
-> User updateUser(id, userUpdateRequest)
+> User updateUser(id, user)
 
 Update User
 
@@ -246,10 +246,10 @@ import 'package:openapi/api.dart';
 
 final api = Openapi().getIdentitiesUsersApi();
 final String id = WbweggLEWWZNqKEgFbh73jMb5YP2; // String | 
-final UserUpdateRequest userUpdateRequest = ; // UserUpdateRequest | 
+final User user = ; // User | 
 
 try {
-    final response = api.updateUser(id, userUpdateRequest);
+    final response = api.updateUser(id, user);
     print(response);
 } catch on DioError (e) {
     print('Exception when calling IdentitiesUsersApi->updateUser: $e\n');
@@ -261,7 +261,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
- **userUpdateRequest** | [**UserUpdateRequest**](UserUpdateRequest.md)|  | [optional] 
+ **user** | [**User**](User.md)|  | [optional] 
 
 ### Return type
 

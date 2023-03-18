@@ -328,12 +328,10 @@ Class | Method | HTTP request | Description
  - [UpdateEventSpeakersRequest](doc/UpdateEventSpeakersRequest.md)
  - [UpdateEventStaffRequest](doc/UpdateEventStaffRequest.md)
  - [User](doc/User.md)
- - [UserCreateRequest](doc/UserCreateRequest.md)
  - [UserLoginRequest](doc/UserLoginRequest.md)
  - [UserLoginResponse](doc/UserLoginResponse.md)
  - [UserNotFound](doc/UserNotFound.md)
  - [UserReportResponse](doc/UserReportResponse.md)
- - [UserUpdateRequest](doc/UserUpdateRequest.md)
 
 
 ## Documentation For Authorization

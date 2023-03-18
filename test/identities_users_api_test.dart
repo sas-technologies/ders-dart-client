@@ -41,14 +41,14 @@ void main() {
     //
     // 
     //
-    //Future<User> createUser({ UserCreateRequest userCreateRequest }) async
+    //Future<User> createUser({ User user }) async
     test('test createUser', () async {
       // TODO
     });
 
     // Update User
     //
-    //Future<User> updateUser(String id, { UserUpdateRequest userUpdateRequest }) async
+    //Future<User> updateUser(String id, { User user }) async
     test('test updateUser', () async {
       // TODO
     });

@@ -182,12 +182,10 @@ import 'package:openapi/src/model/update_event_interpreters_request.dart';
 import 'package:openapi/src/model/update_event_speakers_request.dart';
 import 'package:openapi/src/model/update_event_staff_request.dart';
 import 'package:openapi/src/model/user.dart';
-import 'package:openapi/src/model/user_create_request.dart';
 import 'package:openapi/src/model/user_login_request.dart';
 import 'package:openapi/src/model/user_login_response.dart';
 import 'package:openapi/src/model/user_not_found.dart';
 import 'package:openapi/src/model/user_report_response.dart';
-import 'package:openapi/src/model/user_update_request.dart';
 
 part 'serializers.g.dart';
 
@@ -360,12 +358,10 @@ part 'serializers.g.dart';
   UpdateEventSpeakersRequest,
   UpdateEventStaffRequest,
   User,
-  UserCreateRequest,
   UserLoginRequest,
   UserLoginResponse,
   UserNotFound,
   UserReportResponse,
-  UserUpdateRequest,
 ])
 Serializers serializers = (_$serializers.toBuilder()
       ..addBuilderFactory(

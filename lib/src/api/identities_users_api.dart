@@ -11,8 +11,6 @@ import 'package:openapi/src/api_util.dart';
 import 'package:openapi/src/model/api_v1_identities_users_get200_response.dart';
 import 'package:openapi/src/model/change_password_request.dart';
 import 'package:openapi/src/model/user.dart';
-import 'package:openapi/src/model/user_create_request.dart';
-import 'package:openapi/src/model/user_update_request.dart';
 
 class IdentitiesUsersApi {
 
@@ -337,7 +335,7 @@ class IdentitiesUsersApi {
   /// 
   ///
   /// Parameters:
-  /// * [userCreateRequest] 
+  /// * [user] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -348,7 +346,7 @@ class IdentitiesUsersApi {
   /// Returns a [Future] containing a [Response] with a [User] as data
   /// Throws [DioError] if API call or serialization fails
   Future<Response<User>> createUser({ 
-    UserCreateRequest? userCreateRequest,
+    User? user,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -373,8 +371,8 @@ class IdentitiesUsersApi {
     dynamic _bodyData;
 
     try {
-      const _type = FullType(UserCreateRequest);
-      _bodyData = userCreateRequest == null ? null : _serializers.serialize(userCreateRequest, specifiedType: _type);
+      const _type = FullType(User);
+      _bodyData = user == null ? null : _serializers.serialize(user, specifiedType: _type);
 
     } catch(error, stackTrace) {
       throw DioError(
@@ -433,7 +431,7 @@ class IdentitiesUsersApi {
   ///
   /// Parameters:
   /// * [id] 
-  /// * [userUpdateRequest] 
+  /// * [user] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -445,7 +443,7 @@ class IdentitiesUsersApi {
   /// Throws [DioError] if API call or serialization fails
   Future<Response<User>> updateUser({ 
     required String id,
-    UserUpdateRequest? userUpdateRequest,
+    User? user,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -470,8 +468,8 @@ class IdentitiesUsersApi {
     dynamic _bodyData;
 
     try {
-      const _type = FullType(UserUpdateRequest);
-      _bodyData = userUpdateRequest == null ? null : _serializers.serialize(userUpdateRequest, specifiedType: _type);
+      const _type = FullType(User);
+      _bodyData = user == null ? null : _serializers.serialize(user, specifiedType: _type);
 
     } catch(error, stackTrace) {
       throw DioError(

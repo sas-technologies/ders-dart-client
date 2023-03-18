@@ -187,15 +187,11 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(UpdateEventStaffRequest.serializer)
       ..add(User.serializer)
       ..add(UserAccountStatusEnum.serializer)
-      ..add(UserCreateRequest.serializer)
-      ..add(UserCreateRequestRolesEnum.serializer)
       ..add(UserLoginRequest.serializer)
       ..add(UserLoginResponse.serializer)
       ..add(UserNotFound.serializer)
       ..add(UserReportResponse.serializer)
-      ..add(UserUpdateRequest.serializer)
-      ..add(UserUpdateRequestRolesEnum.serializer)
-      ..add(UserUpdateRequestRolesEnum.serializer)
+      ..add(UserRolesEnum.serializer)
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(Attendance)]),
           () => new ListBuilder<Attendance>())
@@ -512,17 +508,8 @@ Serializers _$serializers = (new Serializers().toBuilder()
           const FullType(BuiltList, const [const FullType(User)]),
           () => new ListBuilder<User>())
       ..addBuilderFactory(
-          const FullType(
-              BuiltList, const [const FullType(UserCreateRequestRolesEnum)]),
-          () => new ListBuilder<UserCreateRequestRolesEnum>())
-      ..addBuilderFactory(
-          const FullType(
-              BuiltList, const [const FullType(UserUpdateRequestRolesEnum)]),
-          () => new ListBuilder<UserUpdateRequestRolesEnum>())
-      ..addBuilderFactory(
-          const FullType(
-              BuiltList, const [const FullType(UserUpdateRequestRolesEnum)]),
-          () => new ListBuilder<UserUpdateRequestRolesEnum>())
+          const FullType(BuiltList, const [const FullType(UserRolesEnum)]),
+          () => new ListBuilder<UserRolesEnum>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(int)]),
           () => new ListBuilder<int>()))
