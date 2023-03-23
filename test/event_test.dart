@@ -73,7 +73,7 @@ void main() {
       // TODO
     });
 
-    // BuiltList<Survey> surveys
+    // BuiltList<String> surveys
     test('to test the property `surveys`', () async {
       // TODO
     });

@@ -94,7 +94,7 @@ class _$Event extends Event {
   @override
   final String? coverPhoto;
   @override
-  final BuiltList<Survey>? surveys;
+  final BuiltList<String>? surveys;
   @override
   final BuiltList<Session>? sessions;
   @override
@@ -262,10 +262,10 @@ class EventBuilder implements Builder<Event, EventBuilder> {
   String? get coverPhoto => _$this._coverPhoto;
   set coverPhoto(String? coverPhoto) => _$this._coverPhoto = coverPhoto;
 
-  ListBuilder<Survey>? _surveys;
-  ListBuilder<Survey> get surveys =>
-      _$this._surveys ??= new ListBuilder<Survey>();
-  set surveys(ListBuilder<Survey>? surveys) => _$this._surveys = surveys;
+  ListBuilder<String>? _surveys;
+  ListBuilder<String> get surveys =>
+      _$this._surveys ??= new ListBuilder<String>();
+  set surveys(ListBuilder<String>? surveys) => _$this._surveys = surveys;
 
   ListBuilder<Session>? _sessions;
   ListBuilder<Session> get sessions =>

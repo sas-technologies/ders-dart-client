@@ -220,8 +220,8 @@ Serializers _$serializers = (new Serializers().toBuilder()
           const FullType(BuiltList, const [const FullType(Badge)]),
           () => new ListBuilder<Badge>())
       ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType(Survey)]),
-          () => new ListBuilder<Survey>())
+          const FullType(BuiltList, const [const FullType(String)]),
+          () => new ListBuilder<String>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(Session)]),
           () => new ListBuilder<Session>())

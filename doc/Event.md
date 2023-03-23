@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **sponsors** | [**BuiltList&lt;Sponsor&gt;**](Sponsor.md) |  | [optional] 
 **badges** | [**BuiltList&lt;Badge&gt;**](Badge.md) |  | [optional] 
 **coverPhoto** | **String** |  | [optional] 
-**surveys** | [**BuiltList&lt;Survey&gt;**](Survey.md) |  | [optional] 
+**surveys** | **BuiltList&lt;String&gt;** |  | [optional] 
 **sessions** | [**BuiltList&lt;Session&gt;**](Session.md) |  | [optional] 
 **registrationForm** | [**RegistrationForm**](RegistrationForm.md) |  | [optional] 
 **settings** | [**Settings**](Settings.md) |  | [optional] 

@@ -7,7 +7,6 @@ import 'package:openapi/src/model/registration_form.dart';
 import 'package:openapi/src/model/badge.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:openapi/src/model/sponsor.dart';
-import 'package:openapi/src/model/survey.dart';
 import 'package:openapi/src/model/session.dart';
 import 'package:openapi/src/model/authority_level.dart';
 import 'package:openapi/src/model/settings.dart';
@@ -80,7 +79,7 @@ abstract class Event implements Built<Event, EventBuilder> {
   String? get coverPhoto;
 
   @BuiltValueField(wireName: r'surveys')
-  BuiltList<Survey>? get surveys;
+  BuiltList<String>? get surveys;
 
   @BuiltValueField(wireName: r'sessions')
   BuiltList<Session>? get sessions;
@@ -209,7 +208,7 @@ class _$EventSerializer implements PrimitiveSerializer<Event> {
       yield r'surveys';
       yield serializers.serialize(
         object.surveys,
-        specifiedType: const FullType(BuiltList, [FullType(Survey)]),
+        specifiedType: const FullType(BuiltList, [FullType(String)]),
       );
     }
     if (object.sessions != null) {
@@ -350,8 +349,8 @@ class _$EventSerializer implements PrimitiveSerializer<Event> {
         case r'surveys':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(BuiltList, [FullType(Survey)]),
-          ) as BuiltList<Survey>;
+            specifiedType: const FullType(BuiltList, [FullType(String)]),
+          ) as BuiltList<String>;
           result.surveys.replace(valueDes);
           break;
         case r'sessions':
