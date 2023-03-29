@@ -14,6 +14,7 @@ part 'attendance_create_request.g.dart';
 /// * [eventId] 
 /// * [scannerId] 
 /// * [registrationId] 
+/// * [sessionId] 
 @BuiltValue()
 abstract class AttendanceCreateRequest implements Built<AttendanceCreateRequest, AttendanceCreateRequestBuilder> {
   @BuiltValueField(wireName: r'eventId')
@@ -24,6 +25,9 @@ abstract class AttendanceCreateRequest implements Built<AttendanceCreateRequest,
 
   @BuiltValueField(wireName: r'registrationId')
   String get registrationId;
+
+  @BuiltValueField(wireName: r'sessionId')
+  String? get sessionId;
 
   AttendanceCreateRequest._();
 
@@ -63,6 +67,13 @@ class _$AttendanceCreateRequestSerializer implements PrimitiveSerializer<Attenda
       object.registrationId,
       specifiedType: const FullType(String),
     );
+    if (object.sessionId != null) {
+      yield r'sessionId';
+      yield serializers.serialize(
+        object.sessionId,
+        specifiedType: const FullType(String),
+      );
+    }
   }
 
   @override
@@ -106,6 +117,13 @@ class _$AttendanceCreateRequestSerializer implements PrimitiveSerializer<Attenda
             specifiedType: const FullType(String),
           ) as String;
           result.registrationId = valueDes;
+          break;
+        case r'sessionId':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.sessionId = valueDes;
           break;
         default:
           unhandled.add(key);

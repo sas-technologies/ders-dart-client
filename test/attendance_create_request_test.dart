@@ -22,5 +22,10 @@ void main() {
       // TODO
     });
 
+    // String sessionId
+    test('to test the property `sessionId`', () async {
+      // TODO
+    });
+
   });
 }

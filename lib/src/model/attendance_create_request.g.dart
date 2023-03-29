@@ -13,6 +13,8 @@ class _$AttendanceCreateRequest extends AttendanceCreateRequest {
   final String scannerId;
   @override
   final String registrationId;
+  @override
+  final String? sessionId;
 
   factory _$AttendanceCreateRequest(
           [void Function(AttendanceCreateRequestBuilder)? updates]) =>
@@ -21,7 +23,8 @@ class _$AttendanceCreateRequest extends AttendanceCreateRequest {
   _$AttendanceCreateRequest._(
       {required this.eventId,
       required this.scannerId,
-      required this.registrationId})
+      required this.registrationId,
+      this.sessionId})
       : super._() {
     BuiltValueNullFieldError.checkNotNull(
         eventId, r'AttendanceCreateRequest', 'eventId');
@@ -46,7 +49,8 @@ class _$AttendanceCreateRequest extends AttendanceCreateRequest {
     return other is AttendanceCreateRequest &&
         eventId == other.eventId &&
         scannerId == other.scannerId &&
-        registrationId == other.registrationId;
+        registrationId == other.registrationId &&
+        sessionId == other.sessionId;
   }
 
   @override
@@ -55,6 +59,7 @@ class _$AttendanceCreateRequest extends AttendanceCreateRequest {
     _$hash = $jc(_$hash, eventId.hashCode);
     _$hash = $jc(_$hash, scannerId.hashCode);
     _$hash = $jc(_$hash, registrationId.hashCode);
+    _$hash = $jc(_$hash, sessionId.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -64,7 +69,8 @@ class _$AttendanceCreateRequest extends AttendanceCreateRequest {
     return (newBuiltValueToStringHelper(r'AttendanceCreateRequest')
           ..add('eventId', eventId)
           ..add('scannerId', scannerId)
-          ..add('registrationId', registrationId))
+          ..add('registrationId', registrationId)
+          ..add('sessionId', sessionId))
         .toString();
   }
 }
@@ -87,6 +93,10 @@ class AttendanceCreateRequestBuilder
   set registrationId(String? registrationId) =>
       _$this._registrationId = registrationId;
 
+  String? _sessionId;
+  String? get sessionId => _$this._sessionId;
+  set sessionId(String? sessionId) => _$this._sessionId = sessionId;
+
   AttendanceCreateRequestBuilder() {
     AttendanceCreateRequest._defaults(this);
   }
@@ -97,6 +107,7 @@ class AttendanceCreateRequestBuilder
       _eventId = $v.eventId;
       _scannerId = $v.scannerId;
       _registrationId = $v.registrationId;
+      _sessionId = $v.sessionId;
       _$v = null;
     }
     return this;
@@ -124,7 +135,8 @@ class AttendanceCreateRequestBuilder
             scannerId: BuiltValueNullFieldError.checkNotNull(
                 scannerId, r'AttendanceCreateRequest', 'scannerId'),
             registrationId: BuiltValueNullFieldError.checkNotNull(
-                registrationId, r'AttendanceCreateRequest', 'registrationId'));
+                registrationId, r'AttendanceCreateRequest', 'registrationId'),
+            sessionId: sessionId);
     replace(_$result);
     return _$result;
   }
