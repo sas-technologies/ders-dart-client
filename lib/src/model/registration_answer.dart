@@ -18,14 +18,14 @@ part 'registration_answer.g.dart';
 @BuiltValue()
 abstract class RegistrationAnswer implements Built<RegistrationAnswer, RegistrationAnswerBuilder> {
   @BuiltValueField(wireName: r'id')
-  String get id;
+  String? get id;
 
   /// This is the string value of the answer. It can be interpreted based on the questionInfo.type field
   @BuiltValueField(wireName: r'answer')
-  String get answer;
+  String? get answer;
 
   @BuiltValueField(wireName: r'questionInfo')
-  FormQuestion get questionInfo;
+  FormQuestion? get questionInfo;
 
   RegistrationAnswer._();
 
@@ -50,21 +50,27 @@ class _$RegistrationAnswerSerializer implements PrimitiveSerializer<Registration
     RegistrationAnswer object, {
     FullType specifiedType = FullType.unspecified,
   }) sync* {
-    yield r'id';
-    yield serializers.serialize(
-      object.id,
-      specifiedType: const FullType(String),
-    );
-    yield r'answer';
-    yield serializers.serialize(
-      object.answer,
-      specifiedType: const FullType(String),
-    );
-    yield r'questionInfo';
-    yield serializers.serialize(
-      object.questionInfo,
-      specifiedType: const FullType(FormQuestion),
-    );
+    if (object.id != null) {
+      yield r'id';
+      yield serializers.serialize(
+        object.id,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.answer != null) {
+      yield r'answer';
+      yield serializers.serialize(
+        object.answer,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.questionInfo != null) {
+      yield r'questionInfo';
+      yield serializers.serialize(
+        object.questionInfo,
+        specifiedType: const FullType(FormQuestion),
+      );
+    }
   }
 
   @override

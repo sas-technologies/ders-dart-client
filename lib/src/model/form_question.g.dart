@@ -8,35 +8,24 @@ part of 'form_question.dart';
 
 class _$FormQuestion extends FormQuestion {
   @override
-  final String id;
+  final String? id;
   @override
-  final String label;
+  final String? label;
   @override
-  final FormQuestionType type;
+  final FormQuestionType? type;
   @override
-  final FormQuestionTag tag;
+  final FormQuestionTag? tag;
   @override
   final bool? required_;
   @override
-  final int order;
+  final int? order;
 
   factory _$FormQuestion([void Function(FormQuestionBuilder)? updates]) =>
       (new FormQuestionBuilder()..update(updates))._build();
 
   _$FormQuestion._(
-      {required this.id,
-      required this.label,
-      required this.type,
-      required this.tag,
-      this.required_,
-      required this.order})
-      : super._() {
-    BuiltValueNullFieldError.checkNotNull(id, r'FormQuestion', 'id');
-    BuiltValueNullFieldError.checkNotNull(label, r'FormQuestion', 'label');
-    BuiltValueNullFieldError.checkNotNull(type, r'FormQuestion', 'type');
-    BuiltValueNullFieldError.checkNotNull(tag, r'FormQuestion', 'tag');
-    BuiltValueNullFieldError.checkNotNull(order, r'FormQuestion', 'order');
-  }
+      {this.id, this.label, this.type, this.tag, this.required_, this.order})
+      : super._();
 
   @override
   FormQuestion rebuild(void Function(FormQuestionBuilder) updates) =>
@@ -146,17 +135,12 @@ class FormQuestionBuilder
   _$FormQuestion _build() {
     final _$result = _$v ??
         new _$FormQuestion._(
-            id: BuiltValueNullFieldError.checkNotNull(
-                id, r'FormQuestion', 'id'),
-            label: BuiltValueNullFieldError.checkNotNull(
-                label, r'FormQuestion', 'label'),
-            type: BuiltValueNullFieldError.checkNotNull(
-                type, r'FormQuestion', 'type'),
-            tag: BuiltValueNullFieldError.checkNotNull(
-                tag, r'FormQuestion', 'tag'),
+            id: id,
+            label: label,
+            type: type,
+            tag: tag,
             required_: required_,
-            order: BuiltValueNullFieldError.checkNotNull(
-                order, r'FormQuestion', 'order'));
+            order: order);
     replace(_$result);
     return _$result;
   }

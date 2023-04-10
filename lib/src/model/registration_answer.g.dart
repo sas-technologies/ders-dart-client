@@ -8,25 +8,17 @@ part of 'registration_answer.dart';
 
 class _$RegistrationAnswer extends RegistrationAnswer {
   @override
-  final String id;
+  final String? id;
   @override
-  final String answer;
+  final String? answer;
   @override
-  final FormQuestion questionInfo;
+  final FormQuestion? questionInfo;
 
   factory _$RegistrationAnswer(
           [void Function(RegistrationAnswerBuilder)? updates]) =>
       (new RegistrationAnswerBuilder()..update(updates))._build();
 
-  _$RegistrationAnswer._(
-      {required this.id, required this.answer, required this.questionInfo})
-      : super._() {
-    BuiltValueNullFieldError.checkNotNull(id, r'RegistrationAnswer', 'id');
-    BuiltValueNullFieldError.checkNotNull(
-        answer, r'RegistrationAnswer', 'answer');
-    BuiltValueNullFieldError.checkNotNull(
-        questionInfo, r'RegistrationAnswer', 'questionInfo');
-  }
+  _$RegistrationAnswer._({this.id, this.answer, this.questionInfo}) : super._();
 
   @override
   RegistrationAnswer rebuild(
@@ -93,7 +85,7 @@ class RegistrationAnswerBuilder
     if ($v != null) {
       _id = $v.id;
       _answer = $v.answer;
-      _questionInfo = $v.questionInfo.toBuilder();
+      _questionInfo = $v.questionInfo?.toBuilder();
       _$v = null;
     }
     return this;
@@ -118,16 +110,12 @@ class RegistrationAnswerBuilder
     try {
       _$result = _$v ??
           new _$RegistrationAnswer._(
-              id: BuiltValueNullFieldError.checkNotNull(
-                  id, r'RegistrationAnswer', 'id'),
-              answer: BuiltValueNullFieldError.checkNotNull(
-                  answer, r'RegistrationAnswer', 'answer'),
-              questionInfo: questionInfo.build());
+              id: id, answer: answer, questionInfo: _questionInfo?.build());
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'questionInfo';
-        questionInfo.build();
+        _questionInfo?.build();
       } catch (e) {
         throw new BuiltValueNestedFieldError(
             r'RegistrationAnswer', _$failedField, e.toString());

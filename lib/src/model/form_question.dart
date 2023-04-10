@@ -22,18 +22,18 @@ part 'form_question.g.dart';
 @BuiltValue()
 abstract class FormQuestion implements Built<FormQuestion, FormQuestionBuilder> {
   @BuiltValueField(wireName: r'id')
-  String get id;
+  String? get id;
 
   /// This represents the label shown to the user on the question (e.g. First Name)
   @BuiltValueField(wireName: r'label')
-  String get label;
+  String? get label;
 
   @BuiltValueField(wireName: r'type')
-  FormQuestionType get type;
+  FormQuestionType? get type;
   // enum typeEnum {  TEXT,  NUMBER,  DATE,  DOCUMENT,  };
 
   @BuiltValueField(wireName: r'tag')
-  FormQuestionTag get tag;
+  FormQuestionTag? get tag;
   // enum tagEnum {  PERSONAL,  WORK,  ADDRESS,  BIO,  DOCUMENT,  CUSTOM,  };
 
   @BuiltValueField(wireName: r'required')
@@ -41,7 +41,7 @@ abstract class FormQuestion implements Built<FormQuestion, FormQuestionBuilder> 
 
   /// This represents the order in which the question/answer should be displayed.
   @BuiltValueField(wireName: r'order')
-  int get order;
+  int? get order;
 
   FormQuestion._();
 
@@ -67,26 +67,34 @@ class _$FormQuestionSerializer implements PrimitiveSerializer<FormQuestion> {
     FormQuestion object, {
     FullType specifiedType = FullType.unspecified,
   }) sync* {
-    yield r'id';
-    yield serializers.serialize(
-      object.id,
-      specifiedType: const FullType(String),
-    );
-    yield r'label';
-    yield serializers.serialize(
-      object.label,
-      specifiedType: const FullType(String),
-    );
-    yield r'type';
-    yield serializers.serialize(
-      object.type,
-      specifiedType: const FullType(FormQuestionType),
-    );
-    yield r'tag';
-    yield serializers.serialize(
-      object.tag,
-      specifiedType: const FullType(FormQuestionTag),
-    );
+    if (object.id != null) {
+      yield r'id';
+      yield serializers.serialize(
+        object.id,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.label != null) {
+      yield r'label';
+      yield serializers.serialize(
+        object.label,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.type != null) {
+      yield r'type';
+      yield serializers.serialize(
+        object.type,
+        specifiedType: const FullType(FormQuestionType),
+      );
+    }
+    if (object.tag != null) {
+      yield r'tag';
+      yield serializers.serialize(
+        object.tag,
+        specifiedType: const FullType(FormQuestionTag),
+      );
+    }
     if (object.required_ != null) {
       yield r'required';
       yield serializers.serialize(
@@ -94,11 +102,13 @@ class _$FormQuestionSerializer implements PrimitiveSerializer<FormQuestion> {
         specifiedType: const FullType(bool),
       );
     }
-    yield r'order';
-    yield serializers.serialize(
-      object.order,
-      specifiedType: const FullType(int),
-    );
+    if (object.order != null) {
+      yield r'order';
+      yield serializers.serialize(
+        object.order,
+        specifiedType: const FullType(int),
+      );
+    }
   }
 
   @override
