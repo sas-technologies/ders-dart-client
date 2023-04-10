@@ -29,20 +29,20 @@ part 'registration.g.dart';
 abstract class Registration implements Built<Registration, RegistrationBuilder> {
   /// This is the registration id
   @BuiltValueField(wireName: r'id')
-  String get id;
+  String? get id;
 
   @BuiltValueField(wireName: r'status')
-  RegistrationStatus get status;
+  RegistrationStatus? get status;
   // enum statusEnum {  PENDING,  APPROVED,  DECLINED,  };
 
   @BuiltValueField(wireName: r'answers')
-  BuiltList<RegistrationAnswer> get answers;
+  BuiltList<RegistrationAnswer>? get answers;
 
   @BuiltValueField(wireName: r'approversReviews')
   ApproverReview? get approversReviews;
 
   @BuiltValueField(wireName: r'createdAt')
-  DateTime get createdAt;
+  DateTime? get createdAt;
 
   @BuiltValueField(wireName: r'internalComments')
   BuiltList<RegistrationComment>? get internalComments;
@@ -54,7 +54,7 @@ abstract class Registration implements Built<Registration, RegistrationBuilder> 
   BuiltList<String>? get receiversGroups;
 
   @BuiltValueField(wireName: r'registrantRank')
-  String get registrantRank;
+  String? get registrantRank;
 
   Registration._();
 
@@ -79,21 +79,27 @@ class _$RegistrationSerializer implements PrimitiveSerializer<Registration> {
     Registration object, {
     FullType specifiedType = FullType.unspecified,
   }) sync* {
-    yield r'id';
-    yield serializers.serialize(
-      object.id,
-      specifiedType: const FullType(String),
-    );
-    yield r'status';
-    yield serializers.serialize(
-      object.status,
-      specifiedType: const FullType(RegistrationStatus),
-    );
-    yield r'answers';
-    yield serializers.serialize(
-      object.answers,
-      specifiedType: const FullType(BuiltList, [FullType(RegistrationAnswer)]),
-    );
+    if (object.id != null) {
+      yield r'id';
+      yield serializers.serialize(
+        object.id,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.status != null) {
+      yield r'status';
+      yield serializers.serialize(
+        object.status,
+        specifiedType: const FullType(RegistrationStatus),
+      );
+    }
+    if (object.answers != null) {
+      yield r'answers';
+      yield serializers.serialize(
+        object.answers,
+        specifiedType: const FullType(BuiltList, [FullType(RegistrationAnswer)]),
+      );
+    }
     if (object.approversReviews != null) {
       yield r'approversReviews';
       yield serializers.serialize(
@@ -101,11 +107,13 @@ class _$RegistrationSerializer implements PrimitiveSerializer<Registration> {
         specifiedType: const FullType(ApproverReview),
       );
     }
-    yield r'createdAt';
-    yield serializers.serialize(
-      object.createdAt,
-      specifiedType: const FullType(DateTime),
-    );
+    if (object.createdAt != null) {
+      yield r'createdAt';
+      yield serializers.serialize(
+        object.createdAt,
+        specifiedType: const FullType(DateTime),
+      );
+    }
     if (object.internalComments != null) {
       yield r'internalComments';
       yield serializers.serialize(
@@ -127,11 +135,13 @@ class _$RegistrationSerializer implements PrimitiveSerializer<Registration> {
         specifiedType: const FullType(BuiltList, [FullType(String)]),
       );
     }
-    yield r'registrantRank';
-    yield serializers.serialize(
-      object.registrantRank,
-      specifiedType: const FullType(String),
-    );
+    if (object.registrantRank != null) {
+      yield r'registrantRank';
+      yield serializers.serialize(
+        object.registrantRank,
+        specifiedType: const FullType(String),
+      );
+    }
   }
 
   @override

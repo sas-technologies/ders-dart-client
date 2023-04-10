@@ -8,15 +8,15 @@ part of 'registration.dart';
 
 class _$Registration extends Registration {
   @override
-  final String id;
+  final String? id;
   @override
-  final RegistrationStatus status;
+  final RegistrationStatus? status;
   @override
-  final BuiltList<RegistrationAnswer> answers;
+  final BuiltList<RegistrationAnswer>? answers;
   @override
   final ApproverReview? approversReviews;
   @override
-  final DateTime createdAt;
+  final DateTime? createdAt;
   @override
   final BuiltList<RegistrationComment>? internalComments;
   @override
@@ -24,30 +24,22 @@ class _$Registration extends Registration {
   @override
   final BuiltList<String>? receiversGroups;
   @override
-  final String registrantRank;
+  final String? registrantRank;
 
   factory _$Registration([void Function(RegistrationBuilder)? updates]) =>
       (new RegistrationBuilder()..update(updates))._build();
 
   _$Registration._(
-      {required this.id,
-      required this.status,
-      required this.answers,
+      {this.id,
+      this.status,
+      this.answers,
       this.approversReviews,
-      required this.createdAt,
+      this.createdAt,
       this.internalComments,
       this.publicComments,
       this.receiversGroups,
-      required this.registrantRank})
-      : super._() {
-    BuiltValueNullFieldError.checkNotNull(id, r'Registration', 'id');
-    BuiltValueNullFieldError.checkNotNull(status, r'Registration', 'status');
-    BuiltValueNullFieldError.checkNotNull(answers, r'Registration', 'answers');
-    BuiltValueNullFieldError.checkNotNull(
-        createdAt, r'Registration', 'createdAt');
-    BuiltValueNullFieldError.checkNotNull(
-        registrantRank, r'Registration', 'registrantRank');
-  }
+      this.registrantRank})
+      : super._();
 
   @override
   Registration rebuild(void Function(RegistrationBuilder) updates) =>
@@ -163,7 +155,7 @@ class RegistrationBuilder
     if ($v != null) {
       _id = $v.id;
       _status = $v.status;
-      _answers = $v.answers.toBuilder();
+      _answers = $v.answers?.toBuilder();
       _approversReviews = $v.approversReviews?.toBuilder();
       _createdAt = $v.createdAt;
       _internalComments = $v.internalComments?.toBuilder();
@@ -194,24 +186,20 @@ class RegistrationBuilder
     try {
       _$result = _$v ??
           new _$Registration._(
-              id: BuiltValueNullFieldError.checkNotNull(
-                  id, r'Registration', 'id'),
-              status: BuiltValueNullFieldError.checkNotNull(
-                  status, r'Registration', 'status'),
-              answers: answers.build(),
+              id: id,
+              status: status,
+              answers: _answers?.build(),
               approversReviews: _approversReviews?.build(),
-              createdAt: BuiltValueNullFieldError.checkNotNull(
-                  createdAt, r'Registration', 'createdAt'),
+              createdAt: createdAt,
               internalComments: _internalComments?.build(),
               publicComments: _publicComments?.build(),
               receiversGroups: _receiversGroups?.build(),
-              registrantRank: BuiltValueNullFieldError.checkNotNull(
-                  registrantRank, r'Registration', 'registrantRank'));
+              registrantRank: registrantRank);
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'answers';
-        answers.build();
+        _answers?.build();
         _$failedField = 'approversReviews';
         _approversReviews?.build();
 
