@@ -72,6 +72,7 @@ Class | Method | HTTP request | Description
 [*CheckinAPIReportApi*](doc/CheckinAPIReportApi.md) | [**getApiV1CheckinsReport**](doc/CheckinAPIReportApi.md#getapiv1checkinsreport) | **GET** /api/v1/checkins/report | GET Attendances Report
 [*CheckinAPIStatisticsApi*](doc/CheckinAPIStatisticsApi.md) | [**getApiV1AttendanceReport**](doc/CheckinAPIStatisticsApi.md#getapiv1attendancereport) | **GET** /api/v1/checkins/statistics | Get Attendance Report
 [*CheckinAPIUserApi*](doc/CheckinAPIUserApi.md) | [**apiV1CheckinsPost**](doc/CheckinAPIUserApi.md#apiv1checkinspost) | **POST** /api/v1/checkins | Checkin/Checkout User
+[*DefaultApi*](doc/DefaultApi.md) | [**postApiV1BadgeDownload**](doc/DefaultApi.md#postapiv1badgedownload) | **POST** /api/v1/badge/download | Download Registration&#39;s Badge
 [*DocumentsUploaderCoverPhotosApi*](doc/DocumentsUploaderCoverPhotosApi.md) | [**apiV1DocumentsEventsCoversPost**](doc/DocumentsUploaderCoverPhotosApi.md#apiv1documentseventscoverspost) | **POST** /api/v1/documents/events/covers | Event Cover Upload
 [*DocumentsUploaderCoverPhotosApi*](doc/DocumentsUploaderCoverPhotosApi.md) | [**apiV1DocumentsSessionsCoversPost**](doc/DocumentsUploaderCoverPhotosApi.md#apiv1documentssessionscoverspost) | **POST** /api/v1/documents/sessions/covers | Session Cover Upload
 [*DocumentsUploaderLogosPhotosApi*](doc/DocumentsUploaderLogosPhotosApi.md) | [**apiV1DocumentsEventsLogosPost**](doc/DocumentsUploaderLogosPhotosApi.md#apiv1documentseventslogospost) | **POST** /api/v1/documents/events/logos | Event Logo Upload
@@ -200,6 +201,8 @@ Class | Method | HTTP request | Description
  - [CheckboxResponseView](doc/CheckboxResponseView.md)
  - [CheckinCreateRequest](doc/CheckinCreateRequest.md)
  - [CheckinStatus](doc/CheckinStatus.md)
+ - [DownloadBadge](doc/DownloadBadge.md)
+ - [DownloadBadgeResponse](doc/DownloadBadgeResponse.md)
  - [DropDown](doc/DropDown.md)
  - [DropDownResponse](doc/DropDownResponse.md)
  - [DropDownResponseView](doc/DropDownResponseView.md)

@@ -54,6 +54,8 @@ import 'package:openapi/src/model/checkbox_response.dart';
 import 'package:openapi/src/model/checkbox_response_view.dart';
 import 'package:openapi/src/model/checkin_create_request.dart';
 import 'package:openapi/src/model/checkin_status.dart';
+import 'package:openapi/src/model/download_badge.dart';
+import 'package:openapi/src/model/download_badge_response.dart';
 import 'package:openapi/src/model/drop_down.dart';
 import 'package:openapi/src/model/drop_down_response.dart';
 import 'package:openapi/src/model/drop_down_response_view.dart';
@@ -230,6 +232,8 @@ part 'serializers.g.dart';
   CheckboxResponseView,
   CheckinCreateRequest,
   CheckinStatus,
+  DownloadBadge,
+  DownloadBadgeResponse,
   DropDown,
   DropDownResponse,
   DropDownResponseView,
