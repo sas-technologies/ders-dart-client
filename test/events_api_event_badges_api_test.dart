@@ -34,6 +34,15 @@ void main() {
       // TODO
     });
 
+    // Download Registration's Badge
+    //
+    // 
+    //
+    //Future<String> postApiV1BadgeDownload({ DownloadBadge downloadBadge }) async
+    test('test postApiV1BadgeDownload', () async {
+      // TODO
+    });
+
     // Creata a Badge
     //
     // This endpoint its used to create a Badge for the first time.

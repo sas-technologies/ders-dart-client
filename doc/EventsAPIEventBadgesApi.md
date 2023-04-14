@@ -12,6 +12,7 @@ Method | HTTP request | Description
 [**deleteApiV1EventsEventIdBadgesBadgeId**](EventsAPIEventBadgesApi.md#deleteapiv1eventseventidbadgesbadgeid) | **DELETE** /api/v1/events/{eventId}/badges/{badgeId} | Delete a Badge from an Event
 [**getApiV1EventsEventIdBadges**](EventsAPIEventBadgesApi.md#getapiv1eventseventidbadges) | **GET** /api/v1/events/{eventId}/badges | Get all Badges of an Event
 [**getApiV1EventsEventIdBadgesBadgeId**](EventsAPIEventBadgesApi.md#getapiv1eventseventidbadgesbadgeid) | **GET** /api/v1/events/{eventId}/badges/{badgeId} | Get a Badge of an Event
+[**postApiV1BadgeDownload**](EventsAPIEventBadgesApi.md#postapiv1badgedownload) | **POST** /api/v1/badge/download | Download Registration&#39;s Badge
 [**postApiV1EventsEventIdBadges**](EventsAPIEventBadgesApi.md#postapiv1eventseventidbadges) | **POST** /api/v1/events/{eventId}/badges | Creata a Badge
 [**putApiV1EventsEventIdBadgesBadgeId**](EventsAPIEventBadgesApi.md#putapiv1eventseventidbadgesbadgeid) | **PUT** /api/v1/events/{eventId}/badges/{badgeId} | Update a Badge of an Event
 
@@ -146,6 +147,49 @@ No authorization required
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **postApiV1BadgeDownload**
+> String postApiV1BadgeDownload(downloadBadge)
+
+Download Registration's Badge
+
+
+
+### Example
+```dart
+import 'package:openapi/api.dart';
+
+final api = Openapi().getEventsAPIEventBadgesApi();
+final DownloadBadge downloadBadge = ; // DownloadBadge | 
+
+try {
+    final response = api.postApiV1BadgeDownload(downloadBadge);
+    print(response);
+} catch on DioError (e) {
+    print('Exception when calling EventsAPIEventBadgesApi->postApiV1BadgeDownload: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **downloadBadge** | [**DownloadBadge**](DownloadBadge.md)|  | [optional] 
+
+### Return type
+
+**String**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

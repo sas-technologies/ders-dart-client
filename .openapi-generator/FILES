@@ -46,7 +46,6 @@ doc/CheckinAPIStatisticsApi.md
 doc/CheckinAPIUserApi.md
 doc/CheckinCreateRequest.md
 doc/CheckinStatus.md
-doc/DefaultApi.md
 doc/DocumentsUploaderCoverPhotosApi.md
 doc/DocumentsUploaderLogosPhotosApi.md
 doc/DocumentsUploaderRegistrationResponseFilesApi.md
@@ -227,7 +226,6 @@ lib/src/api/authorities_api_authorities_api.dart
 lib/src/api/checkin_api_report_api.dart
 lib/src/api/checkin_api_statistics_api.dart
 lib/src/api/checkin_api_user_api.dart
-lib/src/api/default_api.dart
 lib/src/api/documents_uploader_cover_photos_api.dart
 lib/src/api/documents_uploader_logos_photos_api.dart
 lib/src/api/documents_uploader_registration_response_files_api.dart
@@ -496,7 +494,6 @@ test/checkin_api_statistics_api_test.dart
 test/checkin_api_user_api_test.dart
 test/checkin_create_request_test.dart
 test/checkin_status_test.dart
-test/default_api_test.dart
 test/documents_uploader_cover_photos_api_test.dart
 test/documents_uploader_logos_photos_api_test.dart
 test/documents_uploader_registration_response_files_api_test.dart

@@ -13,7 +13,6 @@ import 'package:openapi/src/api/authorities_api_authorities_api.dart';
 import 'package:openapi/src/api/checkin_api_report_api.dart';
 import 'package:openapi/src/api/checkin_api_statistics_api.dart';
 import 'package:openapi/src/api/checkin_api_user_api.dart';
-import 'package:openapi/src/api/default_api.dart';
 import 'package:openapi/src/api/documents_uploader_cover_photos_api.dart';
 import 'package:openapi/src/api/documents_uploader_logos_photos_api.dart';
 import 'package:openapi/src/api/documents_uploader_registration_response_files_api.dart';
@@ -131,12 +130,6 @@ class Openapi {
   /// by doing that all interceptors will not be executed
   CheckinAPIUserApi getCheckinAPIUserApi() {
     return CheckinAPIUserApi(dio, serializers);
-  }
-
-  /// Get DefaultApi instance, base route and serializer can be overridden by a given but be careful,
-  /// by doing that all interceptors will not be executed
-  DefaultApi getDefaultApi() {
-    return DefaultApi(dio, serializers);
   }
 
   /// Get DocumentsUploaderCoverPhotosApi instance, base route and serializer can be overridden by a given but be careful,

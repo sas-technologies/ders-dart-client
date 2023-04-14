@@ -13,7 +13,6 @@ export 'package:openapi/src/api/authorities_api_authorities_api.dart';
 export 'package:openapi/src/api/checkin_api_report_api.dart';
 export 'package:openapi/src/api/checkin_api_statistics_api.dart';
 export 'package:openapi/src/api/checkin_api_user_api.dart';
-export 'package:openapi/src/api/default_api.dart';
 export 'package:openapi/src/api/documents_uploader_cover_photos_api.dart';
 export 'package:openapi/src/api/documents_uploader_logos_photos_api.dart';
 export 'package:openapi/src/api/documents_uploader_registration_response_files_api.dart';
