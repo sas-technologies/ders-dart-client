@@ -23,28 +23,28 @@ part 'approver_review.g.dart';
 abstract class ApproverReview implements Built<ApproverReview, ApproverReviewBuilder> {
   /// The id of the review that the approver user has submitted.
   @BuiltValueField(wireName: r'id')
-  String get id;
+  String? get id;
 
   /// The id of the registration that the this review is submitted for.
   @BuiltValueField(wireName: r'registrationId')
-  String get registrationId;
+  String? get registrationId;
 
   @BuiltValueField(wireName: r'authorityId')
-  String get authorityId;
+  String? get authorityId;
 
   /// This is the firebase uid of the 
   @BuiltValueField(wireName: r'approverUid')
-  String get approverUid;
+  String? get approverUid;
 
   @BuiltValueField(wireName: r'registrationStatus')
-  ApproverReviewStatus get registrationStatus;
+  ApproverReviewStatus? get registrationStatus;
   // enum registrationStatusEnum {  APPROVED,  DECLINED,  };
 
   @BuiltValueField(wireName: r'createdAt')
-  DateTime get createdAt;
+  DateTime? get createdAt;
 
   @BuiltValueField(wireName: r'updatedAt')
-  DateTime get updatedAt;
+  DateTime? get updatedAt;
 
   ApproverReview._();
 
@@ -69,41 +69,55 @@ class _$ApproverReviewSerializer implements PrimitiveSerializer<ApproverReview> 
     ApproverReview object, {
     FullType specifiedType = FullType.unspecified,
   }) sync* {
-    yield r'id';
-    yield serializers.serialize(
-      object.id,
-      specifiedType: const FullType(String),
-    );
-    yield r'registrationId';
-    yield serializers.serialize(
-      object.registrationId,
-      specifiedType: const FullType(String),
-    );
-    yield r'authorityId';
-    yield serializers.serialize(
-      object.authorityId,
-      specifiedType: const FullType(String),
-    );
-    yield r'approverUid';
-    yield serializers.serialize(
-      object.approverUid,
-      specifiedType: const FullType(String),
-    );
-    yield r'registrationStatus';
-    yield serializers.serialize(
-      object.registrationStatus,
-      specifiedType: const FullType(ApproverReviewStatus),
-    );
-    yield r'createdAt';
-    yield serializers.serialize(
-      object.createdAt,
-      specifiedType: const FullType(DateTime),
-    );
-    yield r'updatedAt';
-    yield serializers.serialize(
-      object.updatedAt,
-      specifiedType: const FullType(DateTime),
-    );
+    if (object.id != null) {
+      yield r'id';
+      yield serializers.serialize(
+        object.id,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.registrationId != null) {
+      yield r'registrationId';
+      yield serializers.serialize(
+        object.registrationId,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.authorityId != null) {
+      yield r'authorityId';
+      yield serializers.serialize(
+        object.authorityId,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.approverUid != null) {
+      yield r'approverUid';
+      yield serializers.serialize(
+        object.approverUid,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.registrationStatus != null) {
+      yield r'registrationStatus';
+      yield serializers.serialize(
+        object.registrationStatus,
+        specifiedType: const FullType(ApproverReviewStatus),
+      );
+    }
+    if (object.createdAt != null) {
+      yield r'createdAt';
+      yield serializers.serialize(
+        object.createdAt,
+        specifiedType: const FullType(DateTime),
+      );
+    }
+    if (object.updatedAt != null) {
+      yield r'updatedAt';
+      yield serializers.serialize(
+        object.updatedAt,
+        specifiedType: const FullType(DateTime),
+      );
+    }
   }
 
   @override

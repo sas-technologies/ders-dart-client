@@ -8,46 +8,32 @@ part of 'approver_review.dart';
 
 class _$ApproverReview extends ApproverReview {
   @override
-  final String id;
+  final String? id;
   @override
-  final String registrationId;
+  final String? registrationId;
   @override
-  final String authorityId;
+  final String? authorityId;
   @override
-  final String approverUid;
+  final String? approverUid;
   @override
-  final ApproverReviewStatus registrationStatus;
+  final ApproverReviewStatus? registrationStatus;
   @override
-  final DateTime createdAt;
+  final DateTime? createdAt;
   @override
-  final DateTime updatedAt;
+  final DateTime? updatedAt;
 
   factory _$ApproverReview([void Function(ApproverReviewBuilder)? updates]) =>
       (new ApproverReviewBuilder()..update(updates))._build();
 
   _$ApproverReview._(
-      {required this.id,
-      required this.registrationId,
-      required this.authorityId,
-      required this.approverUid,
-      required this.registrationStatus,
-      required this.createdAt,
-      required this.updatedAt})
-      : super._() {
-    BuiltValueNullFieldError.checkNotNull(id, r'ApproverReview', 'id');
-    BuiltValueNullFieldError.checkNotNull(
-        registrationId, r'ApproverReview', 'registrationId');
-    BuiltValueNullFieldError.checkNotNull(
-        authorityId, r'ApproverReview', 'authorityId');
-    BuiltValueNullFieldError.checkNotNull(
-        approverUid, r'ApproverReview', 'approverUid');
-    BuiltValueNullFieldError.checkNotNull(
-        registrationStatus, r'ApproverReview', 'registrationStatus');
-    BuiltValueNullFieldError.checkNotNull(
-        createdAt, r'ApproverReview', 'createdAt');
-    BuiltValueNullFieldError.checkNotNull(
-        updatedAt, r'ApproverReview', 'updatedAt');
-  }
+      {this.id,
+      this.registrationId,
+      this.authorityId,
+      this.approverUid,
+      this.registrationStatus,
+      this.createdAt,
+      this.updatedAt})
+      : super._();
 
   @override
   ApproverReview rebuild(void Function(ApproverReviewBuilder) updates) =>
@@ -168,20 +154,13 @@ class ApproverReviewBuilder
   _$ApproverReview _build() {
     final _$result = _$v ??
         new _$ApproverReview._(
-            id: BuiltValueNullFieldError.checkNotNull(
-                id, r'ApproverReview', 'id'),
-            registrationId: BuiltValueNullFieldError.checkNotNull(
-                registrationId, r'ApproverReview', 'registrationId'),
-            authorityId: BuiltValueNullFieldError.checkNotNull(
-                authorityId, r'ApproverReview', 'authorityId'),
-            approverUid: BuiltValueNullFieldError.checkNotNull(
-                approverUid, r'ApproverReview', 'approverUid'),
-            registrationStatus: BuiltValueNullFieldError.checkNotNull(
-                registrationStatus, r'ApproverReview', 'registrationStatus'),
-            createdAt: BuiltValueNullFieldError.checkNotNull(
-                createdAt, r'ApproverReview', 'createdAt'),
-            updatedAt: BuiltValueNullFieldError.checkNotNull(
-                updatedAt, r'ApproverReview', 'updatedAt'));
+            id: id,
+            registrationId: registrationId,
+            authorityId: authorityId,
+            approverUid: approverUid,
+            registrationStatus: registrationStatus,
+            createdAt: createdAt,
+            updatedAt: updatedAt);
     replace(_$result);
     return _$result;
   }
