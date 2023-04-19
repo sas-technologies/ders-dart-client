@@ -25,6 +25,7 @@ part 'registration.g.dart';
 /// * [publicComments] 
 /// * [receiversGroups] 
 /// * [registrantRank] 
+/// * [badgeId] 
 @BuiltValue()
 abstract class Registration implements Built<Registration, RegistrationBuilder> {
   /// This is the registration id
@@ -55,6 +56,9 @@ abstract class Registration implements Built<Registration, RegistrationBuilder> 
 
   @BuiltValueField(wireName: r'registrantRank')
   String? get registrantRank;
+
+  @BuiltValueField(wireName: r'badgeId')
+  String? get badgeId;
 
   Registration._();
 
@@ -139,6 +143,13 @@ class _$RegistrationSerializer implements PrimitiveSerializer<Registration> {
       yield r'registrantRank';
       yield serializers.serialize(
         object.registrantRank,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.badgeId != null) {
+      yield r'badgeId';
+      yield serializers.serialize(
+        object.badgeId,
         specifiedType: const FullType(String),
       );
     }
@@ -227,6 +238,13 @@ class _$RegistrationSerializer implements PrimitiveSerializer<Registration> {
             specifiedType: const FullType(String),
           ) as String;
           result.registrantRank = valueDes;
+          break;
+        case r'badgeId':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String;
+          result.badgeId = valueDes;
           break;
         default:
           unhandled.add(key);

@@ -126,12 +126,15 @@ doc/ReceiversUpdateRequest.md
 doc/ReceiversUpdateResponse.md
 doc/RefreshTokenRequest.md
 doc/RefreshTokenResponse.md
+doc/RegistrantBadgeUpdateRequest.md
+doc/RegistrantBadgeUpdateResponse.md
 doc/RegistrantHasAlreadyAnswered.md
 doc/RegistrantRankUpdateRequest.md
 doc/RegistrantRankUpdateResponse.md
 doc/Registration.md
 doc/RegistrationAPIEventsApprovalTemplateApi.md
 doc/RegistrationAPIRegistrationApi.md
+doc/RegistrationAPIRegistrationBadgeApi.md
 doc/RegistrationAPIRegistrationPageApi.md
 doc/RegistrationAPIRegistrationRankApi.md
 doc/RegistrationAPIRegistrationReceiversApi.md
@@ -250,6 +253,7 @@ lib/src/api/identities_users_report_api.dart
 lib/src/api/qrapi_registration_api.dart
 lib/src/api/registration_api_events_approval_template_api.dart
 lib/src/api/registration_api_registration_api.dart
+lib/src/api/registration_api_registration_badge_api.dart
 lib/src/api/registration_api_registration_page_api.dart
 lib/src/api/registration_api_registration_rank_api.dart
 lib/src/api/registration_api_registration_receivers_api.dart
@@ -375,6 +379,8 @@ lib/src/model/receivers_update_request.dart
 lib/src/model/receivers_update_response.dart
 lib/src/model/refresh_token_request.dart
 lib/src/model/refresh_token_response.dart
+lib/src/model/registrant_badge_update_request.dart
+lib/src/model/registrant_badge_update_response.dart
 lib/src/model/registrant_has_already_answered.dart
 lib/src/model/registrant_rank_update_request.dart
 lib/src/model/registrant_rank_update_response.dart
@@ -576,6 +582,8 @@ test/receivers_update_request_test.dart
 test/receivers_update_response_test.dart
 test/refresh_token_request_test.dart
 test/refresh_token_response_test.dart
+test/registrant_badge_update_request_test.dart
+test/registrant_badge_update_response_test.dart
 test/registrant_has_already_answered_test.dart
 test/registrant_rank_update_request_test.dart
 test/registrant_rank_update_response_test.dart
@@ -583,6 +591,7 @@ test/registration_answer_create_request_test.dart
 test/registration_answer_test.dart
 test/registration_api_events_approval_template_api_test.dart
 test/registration_api_registration_api_test.dart
+test/registration_api_registration_badge_api_test.dart
 test/registration_api_registration_page_api_test.dart
 test/registration_api_registration_rank_api_test.dart
 test/registration_api_registration_receivers_api_test.dart

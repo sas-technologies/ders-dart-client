@@ -25,6 +25,8 @@ class _$Registration extends Registration {
   final BuiltList<String>? receiversGroups;
   @override
   final String? registrantRank;
+  @override
+  final String? badgeId;
 
   factory _$Registration([void Function(RegistrationBuilder)? updates]) =>
       (new RegistrationBuilder()..update(updates))._build();
@@ -38,7 +40,8 @@ class _$Registration extends Registration {
       this.internalComments,
       this.publicComments,
       this.receiversGroups,
-      this.registrantRank})
+      this.registrantRank,
+      this.badgeId})
       : super._();
 
   @override
@@ -60,7 +63,8 @@ class _$Registration extends Registration {
         internalComments == other.internalComments &&
         publicComments == other.publicComments &&
         receiversGroups == other.receiversGroups &&
-        registrantRank == other.registrantRank;
+        registrantRank == other.registrantRank &&
+        badgeId == other.badgeId;
   }
 
   @override
@@ -75,6 +79,7 @@ class _$Registration extends Registration {
     _$hash = $jc(_$hash, publicComments.hashCode);
     _$hash = $jc(_$hash, receiversGroups.hashCode);
     _$hash = $jc(_$hash, registrantRank.hashCode);
+    _$hash = $jc(_$hash, badgeId.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -90,7 +95,8 @@ class _$Registration extends Registration {
           ..add('internalComments', internalComments)
           ..add('publicComments', publicComments)
           ..add('receiversGroups', receiversGroups)
-          ..add('registrantRank', registrantRank))
+          ..add('registrantRank', registrantRank)
+          ..add('badgeId', badgeId))
         .toString();
   }
 }
@@ -146,6 +152,10 @@ class RegistrationBuilder
   set registrantRank(String? registrantRank) =>
       _$this._registrantRank = registrantRank;
 
+  String? _badgeId;
+  String? get badgeId => _$this._badgeId;
+  set badgeId(String? badgeId) => _$this._badgeId = badgeId;
+
   RegistrationBuilder() {
     Registration._defaults(this);
   }
@@ -162,6 +172,7 @@ class RegistrationBuilder
       _publicComments = $v.publicComments?.toBuilder();
       _receiversGroups = $v.receiversGroups?.toBuilder();
       _registrantRank = $v.registrantRank;
+      _badgeId = $v.badgeId;
       _$v = null;
     }
     return this;
@@ -194,7 +205,8 @@ class RegistrationBuilder
               internalComments: _internalComments?.build(),
               publicComments: _publicComments?.build(),
               receiversGroups: _receiversGroups?.build(),
-              registrantRank: registrantRank);
+              registrantRank: registrantRank,
+              badgeId: badgeId);
     } catch (_) {
       late String _$failedField;
       try {

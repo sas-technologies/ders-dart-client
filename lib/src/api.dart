@@ -36,6 +36,7 @@ import 'package:openapi/src/api/identities_users_report_api.dart';
 import 'package:openapi/src/api/qrapi_registration_api.dart';
 import 'package:openapi/src/api/registration_api_events_approval_template_api.dart';
 import 'package:openapi/src/api/registration_api_registration_api.dart';
+import 'package:openapi/src/api/registration_api_registration_badge_api.dart';
 import 'package:openapi/src/api/registration_api_registration_page_api.dart';
 import 'package:openapi/src/api/registration_api_registration_rank_api.dart';
 import 'package:openapi/src/api/registration_api_registration_receivers_api.dart';
@@ -269,6 +270,12 @@ class Openapi {
   /// by doing that all interceptors will not be executed
   RegistrationAPIRegistrationApi getRegistrationAPIRegistrationApi() {
     return RegistrationAPIRegistrationApi(dio, serializers);
+  }
+
+  /// Get RegistrationAPIRegistrationBadgeApi instance, base route and serializer can be overridden by a given but be careful,
+  /// by doing that all interceptors will not be executed
+  RegistrationAPIRegistrationBadgeApi getRegistrationAPIRegistrationBadgeApi() {
+    return RegistrationAPIRegistrationBadgeApi(dio, serializers);
   }
 
   /// Get RegistrationAPIRegistrationPageApi instance, base route and serializer can be overridden by a given but be careful,

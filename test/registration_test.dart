@@ -53,5 +53,10 @@ void main() {
       // TODO
     });
 
+    // String badgeId
+    test('to test the property `badgeId`', () async {
+      // TODO
+    });
+
   });
 }

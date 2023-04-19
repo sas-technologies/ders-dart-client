@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **publicComments** | [**BuiltList&lt;RegistrationComment&gt;**](RegistrationComment.md) |  | [optional] 
 **receiversGroups** | **BuiltList&lt;String&gt;** |  | [optional] 
 **registrantRank** | **String** |  | [optional] 
+**badgeId** | **String** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

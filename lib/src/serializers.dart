@@ -113,6 +113,8 @@ import 'package:openapi/src/model/receivers_update_request.dart';
 import 'package:openapi/src/model/receivers_update_response.dart';
 import 'package:openapi/src/model/refresh_token_request.dart';
 import 'package:openapi/src/model/refresh_token_response.dart';
+import 'package:openapi/src/model/registrant_badge_update_request.dart';
+import 'package:openapi/src/model/registrant_badge_update_response.dart';
 import 'package:openapi/src/model/registrant_has_already_answered.dart';
 import 'package:openapi/src/model/registrant_rank_update_request.dart';
 import 'package:openapi/src/model/registrant_rank_update_response.dart';
@@ -291,6 +293,8 @@ part 'serializers.g.dart';
   ReceiversUpdateResponse,
   RefreshTokenRequest,
   RefreshTokenResponse,
+  RegistrantBadgeUpdateRequest,
+  RegistrantBadgeUpdateResponse,
   RegistrantHasAlreadyAnswered,
   RegistrantRankUpdateRequest,
   RegistrantRankUpdateResponse,

@@ -124,6 +124,7 @@ Class | Method | HTTP request | Description
 [*RegistrationAPIRegistrationApi*](doc/RegistrationAPIRegistrationApi.md) | [**getApiV1Registrations**](doc/RegistrationAPIRegistrationApi.md#getapiv1registrations) | **GET** /api/v1/registrations | Get all Registrations
 [*RegistrationAPIRegistrationApi*](doc/RegistrationAPIRegistrationApi.md) | [**getApiV1RegistrationsRegistrationId**](doc/RegistrationAPIRegistrationApi.md#getapiv1registrationsregistrationid) | **GET** /api/v1/registrations/{registrationId} | Get a Registration by ID
 [*RegistrationAPIRegistrationApi*](doc/RegistrationAPIRegistrationApi.md) | [**postApiV1Registrations**](doc/RegistrationAPIRegistrationApi.md#postapiv1registrations) | **POST** /api/v1/registrations | Create a User Registration
+[*RegistrationAPIRegistrationBadgeApi*](doc/RegistrationAPIRegistrationBadgeApi.md) | [**patchApiV1RegistrationsRegistrationIdBadge**](doc/RegistrationAPIRegistrationBadgeApi.md#patchapiv1registrationsregistrationidbadge) | **PATCH** /api/v1/registrations/{registrationId}/badge | PATCH Registration BadgeId
 [*RegistrationAPIRegistrationPageApi*](doc/RegistrationAPIRegistrationPageApi.md) | [**getApiV1RegistrationsPage**](doc/RegistrationAPIRegistrationPageApi.md#getapiv1registrationspage) | **GET** /api/v1/registrations/page | Get all Registrations
 [*RegistrationAPIRegistrationRankApi*](doc/RegistrationAPIRegistrationRankApi.md) | [**patchApiV1RegistrationsRegistrationIdRank**](doc/RegistrationAPIRegistrationRankApi.md#patchapiv1registrationsregistrationidrank) | **PATCH** /api/v1/registrations/{registrationId}/rank | PATCH Registration Rank
 [*RegistrationAPIRegistrationReceiversApi*](doc/RegistrationAPIRegistrationReceiversApi.md) | [**patchApiV1RegistrationsRegistrationIdReceivers**](doc/RegistrationAPIRegistrationReceiversApi.md#patchapiv1registrationsregistrationidreceivers) | **PATCH** /api/v1/registrations/{registrationId}/receivers | Update registration receiversGroups
@@ -260,6 +261,8 @@ Class | Method | HTTP request | Description
  - [ReceiversUpdateResponse](doc/ReceiversUpdateResponse.md)
  - [RefreshTokenRequest](doc/RefreshTokenRequest.md)
  - [RefreshTokenResponse](doc/RefreshTokenResponse.md)
+ - [RegistrantBadgeUpdateRequest](doc/RegistrantBadgeUpdateRequest.md)
+ - [RegistrantBadgeUpdateResponse](doc/RegistrantBadgeUpdateResponse.md)
  - [RegistrantHasAlreadyAnswered](doc/RegistrantHasAlreadyAnswered.md)
  - [RegistrantRankUpdateRequest](doc/RegistrantRankUpdateRequest.md)
  - [RegistrantRankUpdateResponse](doc/RegistrantRankUpdateResponse.md)
